@@ -1,0 +1,53 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Chunks' => 
+    array (
+      'da5bfdbdb57848f6009dfef893c25f43' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":1,"source":0,"property_preprocess":0,"name":"flex5.off-canvas","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<div class=\\"off-canvas-wrap\\" data-offcanvas>\\r\\n    <div class=\\"inner-wrap\\">\\r\\n        <header>\\r\\n            <nav class=\\"tab-bar\\">\\r\\n                <section class=\\"[[++flex5.top-bar-align]]-small\\">\\r\\n                <a class=\\"[[++flex5.top-bar-align]]-off-canvas-toggle menu-icon\\" href=\\"#\\"><span><\\/span><\\/a>\\r\\n                <\\/section>\\r\\n\\r\\n                <section class=\\"middle tab-bar-section\\">\\r\\n                <h1 class=\\"title\\">[[++site_name]]<\\/h1>\\r\\n                <\\/section>\\r\\n            <\\/nav>\\r\\n            <!-- Off Canvas Menu -->\\r\\n            <aside class=\\"[[++flex5.top-bar-align]]-off-canvas-menu\\">\\r\\n                [[pdoMenu?\\r\\n                    &parents=`0`\\r\\n                    &level=`0`\\r\\n                    &tplOuter=`@INLINE <ul class=\\"[[+classnames]] off-canvas-list\\">[[+wrapper]]<\\/ul>`\\r\\n                    &tplInner=`@INLINE <ul class=\\"[[+classnames]]\\">[[+wrapper]]<\\/ul>`\\r\\n                    &tplParentRow=`@INLINE <li class=\\"[[+classnames]]\\"><a href=\\"[[+link]]\\" [[+attributes]]>[[+pagetitle]]<\\/a>[[+wrapper]]<\\/li>`\\r\\n                ]]\\r\\n            <\\/aside>\\r\\n        <\\/header>","locked":0,"properties":"a:0:{}","static":0,"static_file":"","content":"<div class=\\"off-canvas-wrap\\" data-offcanvas>\\r\\n    <div class=\\"inner-wrap\\">\\r\\n        <header>\\r\\n            <nav class=\\"tab-bar\\">\\r\\n                <section class=\\"[[++flex5.top-bar-align]]-small\\">\\r\\n                <a class=\\"[[++flex5.top-bar-align]]-off-canvas-toggle menu-icon\\" href=\\"#\\"><span><\\/span><\\/a>\\r\\n                <\\/section>\\r\\n\\r\\n                <section class=\\"middle tab-bar-section\\">\\r\\n                <h1 class=\\"title\\">[[++site_name]]<\\/h1>\\r\\n                <\\/section>\\r\\n            <\\/nav>\\r\\n            <!-- Off Canvas Menu -->\\r\\n            <aside class=\\"[[++flex5.top-bar-align]]-off-canvas-menu\\">\\r\\n                [[pdoMenu?\\r\\n                    &parents=`0`\\r\\n                    &level=`0`\\r\\n                    &tplOuter=`@INLINE <ul class=\\"[[+classnames]] off-canvas-list\\">[[+wrapper]]<\\/ul>`\\r\\n                    &tplInner=`@INLINE <ul class=\\"[[+classnames]]\\">[[+wrapper]]<\\/ul>`\\r\\n                    &tplParentRow=`@INLINE <li class=\\"[[+classnames]]\\"><a href=\\"[[+link]]\\" [[+attributes]]>[[+pagetitle]]<\\/a>[[+wrapper]]<\\/li>`\\r\\n                ]]\\r\\n            <\\/aside>\\r\\n        <\\/header>"}',
+        'guid' => '2d70376cac24c9cd45673555e85c04be',
+        'native_key' => 1,
+        'signature' => '43252750120f2514eca7175eb8c32e34',
+      ),
+      'a30a5c88476b56ae1eac7b077e4b47cb' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":2,"source":0,"property_preprocess":0,"name":"flex5.top-bar","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<header>\\r\\n    <nav class=\\"top-bar\\" data-topbar role=\\"navigation\\">\\r\\n        <ul class=\\"title-area\\">\\r\\n            <li class=\\"name\\">\\r\\n                [[++flex5.top-bar-title:is=`yes`:then=`\\r\\n                    <h1><a href=\\"[[~1]]\\">[[++site_name]]<\\/a><\\/h1>\\r\\n                `]]\\r\\n                \\r\\n            <\\/li>\\r\\n            <!-- Remove the class \\"menu-icon\\" to get rid of menu icon. Take out \\"Menu\\" to just have icon alone -->\\r\\n            <li class=\\"toggle-topbar menu-icon\\"><a href=\\"#\\"><span>Menu<\\/span><\\/a><\\/li>\\r\\n        <\\/ul>\\r\\n        <section class=\\"top-bar-section\\">\\r\\n            [[pdoMenu?\\r\\n                &parents=`0`\\r\\n                &level=`0`\\r\\n                &tplOuter=`@INLINE <ul class=\\"[[+classnames]] [[++flex5.top-bar-align]]\\">[[+wrapper]]<\\/ul>`\\r\\n                &tplInner=`@INLINE <ul class=\\"[[+classnames]] dropdown\\">[[+wrapper]]<\\/ul>`\\r\\n                &tplParentRow=`@INLINE <li class=\\"[[+classnames]] has-dropdown\\"><a href=\\"[[+link]]\\" [[+attributes]]>[[+pagetitle]]<\\/a>[[+wrapper]]<\\/li>`\\r\\n            ]]\\r\\n        <\\/section>\\r\\n    <\\/nav>\\r\\n<\\/header>","locked":0,"properties":"a:0:{}","static":0,"static_file":"","content":"<header>\\r\\n    <nav class=\\"top-bar\\" data-topbar role=\\"navigation\\">\\r\\n        <ul class=\\"title-area\\">\\r\\n            <li class=\\"name\\">\\r\\n                [[++flex5.top-bar-title:is=`yes`:then=`\\r\\n                    <h1><a href=\\"[[~1]]\\">[[++site_name]]<\\/a><\\/h1>\\r\\n                `]]\\r\\n                \\r\\n            <\\/li>\\r\\n            <!-- Remove the class \\"menu-icon\\" to get rid of menu icon. Take out \\"Menu\\" to just have icon alone -->\\r\\n            <li class=\\"toggle-topbar menu-icon\\"><a href=\\"#\\"><span>Menu<\\/span><\\/a><\\/li>\\r\\n        <\\/ul>\\r\\n        <section class=\\"top-bar-section\\">\\r\\n            [[pdoMenu?\\r\\n                &parents=`0`\\r\\n                &level=`0`\\r\\n                &tplOuter=`@INLINE <ul class=\\"[[+classnames]] [[++flex5.top-bar-align]]\\">[[+wrapper]]<\\/ul>`\\r\\n                &tplInner=`@INLINE <ul class=\\"[[+classnames]] dropdown\\">[[+wrapper]]<\\/ul>`\\r\\n                &tplParentRow=`@INLINE <li class=\\"[[+classnames]] has-dropdown\\"><a href=\\"[[+link]]\\" [[+attributes]]>[[+pagetitle]]<\\/a>[[+wrapper]]<\\/li>`\\r\\n            ]]\\r\\n        <\\/section>\\r\\n    <\\/nav>\\r\\n<\\/header>"}',
+        'guid' => '0298a0d6ea0cd41fa56b8e22f954c586',
+        'native_key' => 2,
+        'signature' => 'b2a86769e97900f55bbbcb4398de2168',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'flexibility5',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '65029a7c22afcf6a72d0417a6e936aba',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => 'f1d7b50f174b3ab817e637568f6840b5',
+  'native_key' => 3,
+  'object' => '{"id":3,"parent":0,"category":"Navigation"}',
+);

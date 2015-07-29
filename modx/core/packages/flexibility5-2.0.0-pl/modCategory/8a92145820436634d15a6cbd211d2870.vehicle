@@ -1,0 +1,73 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Chunks' => 
+    array (
+      '3baac2152c0a8c3864704140bf941b5d' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":1,"source":0,"property_preprocess":0,"name":"flex5.sections_inner_tpl","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<div class=\\"[[!switch? &get=`[[+total]]` &c1=`1` &do1=`small-12 large-12 column` &c2=`2` &do2=`small-12 medium-6 large-6 columns` &c3=`3` &do3=`small-12 large-4 columns` &c4=`4` &do4=`small-12 medium-6 large-3 columns` &default=`12`]]\\">\\r\\n\\t[[+column]]\\r\\n<\\/div>","locked":0,"properties":"a:0:{}","static":0,"static_file":"","content":"<div class=\\"[[!switch? &get=`[[+total]]` &c1=`1` &do1=`small-12 large-12 column` &c2=`2` &do2=`small-12 medium-6 large-6 columns` &c3=`3` &do3=`small-12 large-4 columns` &c4=`4` &do4=`small-12 medium-6 large-3 columns` &default=`12`]]\\">\\r\\n\\t[[+column]]\\r\\n<\\/div>"}',
+        'guid' => 'a59ae573d82de389ba0453bf37f81f84',
+        'native_key' => 1,
+        'signature' => '9bde1f256fce561ce1ffbb5ac2d25686',
+      ),
+      '72be0e8d7b8f2a9718004dcedbffdd4c' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":2,"source":0,"property_preprocess":0,"name":"flex5.sections_outer_tpl","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<div class=\\"row\\">\\r\\n\\t[[!getImageList? \\r\\n\\t\\t&tvname=`nestedmigx`\\r\\n\\t\\t&value=`[[+columns]]`\\r\\n\\t\\t&tpl=`flex5.sections_inner_tpl`\\r\\n\\t]]\\r\\n<\\/div>","locked":0,"properties":"a:0:{}","static":0,"static_file":"","content":"<div class=\\"row\\">\\r\\n\\t[[!getImageList? \\r\\n\\t\\t&tvname=`nestedmigx`\\r\\n\\t\\t&value=`[[+columns]]`\\r\\n\\t\\t&tpl=`flex5.sections_inner_tpl`\\r\\n\\t]]\\r\\n<\\/div>"}',
+        'guid' => '999b77de4fd6f824f407b93c98c43065',
+        'native_key' => 2,
+        'signature' => '639eb682aa6fd32dcd1612b38cecd09d',
+      ),
+    ),
+    'TemplateVars' => 
+    array (
+      'd89c9f1a43c8584da1e7daba02c3ce8d' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":1,"source":0,"property_preprocess":0,"type":"migx","name":"nestedmigx","caption":"Section rows","description":"Create, edit and sort the page content section rows. Within a row you can add 1 or more columns of content.","editor_type":0,"category":0,"locked":0,"elements":"","rank":1,"display":"default","default_text":"","properties":"a:0:{}","input_properties":"a:7:{s:7:\\"configs\\";s:15:\\"nestedmigxouter\\";s:8:\\"formtabs\\";s:0:\\"\\";s:7:\\"columns\\";s:0:\\"\\";s:7:\\"btntext\\";s:0:\\"\\";s:10:\\"previewurl\\";s:0:\\"\\";s:10:\\"jsonvarkey\\";s:0:\\"\\";s:19:\\"autoResourceFolders\\";s:5:\\"false\\";}","output_properties":"a:0:{}","static":0,"static_file":"","content":""}',
+        'guid' => '23ff78e846ecf5f0a9314eabdb8c73a9',
+        'native_key' => 1,
+        'signature' => 'e3195e5125d89d22f9185c3ab738fb42',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'TemplateVars' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'flexibility5',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '2f95b278d5ed7b343ecdf4c622451801',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '8a92145820436634d15a6cbd211d2870',
+  'native_key' => 4,
+  'object' => '{"id":4,"parent":0,"category":"Sections"}',
+);

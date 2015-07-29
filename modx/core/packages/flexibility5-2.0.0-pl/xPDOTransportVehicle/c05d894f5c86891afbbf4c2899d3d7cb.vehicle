@@ -1,0 +1,32 @@
+<?php return array (
+  'class' => 'xPDOTransportVehicle',
+  'object' => 
+  array (
+    'source' => 'flexibility5-2.0.0-pl/xPDOTransportVehicle/c05d894f5c86891afbbf4c2899d3d7cb/',
+    'target' => 'return MODX_CORE_PATH . \'packages/\';',
+    'name' => 'pdotools-2.0.5-pl.transport.zip',
+  ),
+  'vehicle_class' => 'xPDOTransportVehicle',
+  'namespace' => 'flexibility5',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"flexibility5-2.0.0-pl\\/xPDOTransportVehicle\\/c05d894f5c86891afbbf4c2899d3d7cb.resolve.pdotools.resolver","type":"php","name":"resolve.pdotools"}',
+    ),
+  ),
+  'validate' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"flexibility5-2.0.0-pl\\/xPDOTransportVehicle\\/c05d894f5c86891afbbf4c2899d3d7cb.validate.pdotools.validator","type":"php","name":"validate.pdotools"}',
+    ),
+  ),
+  'vehicle_package' => 'transport',
+  'guid' => '3d8b9233a1db6ea0e7a8e0cfc0a75cd6',
+  'package' => '',
+  'signature' => 'c05d894f5c86891afbbf4c2899d3d7cb',
+  'native_key' => '3d8b9233a1db6ea0e7a8e0cfc0a75cd6',
+);

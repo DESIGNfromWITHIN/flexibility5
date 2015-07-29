@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html class="no-js" lang="[[++cultureKey]]">
+    <head>
+        <base href="[[++site_url]]" />
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>[[*longtitle:notempty=`[[*longtitle]]`:default=`[[*pagetitle]]`]] | [[++site_name]]</title>
+        <meta name="description" content="[[*description]]">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="icon" type="image/png" href="[[++flex5.favicon]]">
+        <link rel="stylesheet" href="assets/components/flexibility5/css/foundation.css" />
+        <script src="assets/components/flexibility5/js/vendor/modernizr.js"></script>
+    </head>
+    <body>
+        [[!switch?
+            &get=`[[++flex5.menu_type]]`
+            &c1=`top-bar`
+            &do1=`[[$flex5.top-bar]]`
+            &c2=`off-canvas`
+            &do2=`[[$flex5.off-canvas]]`
+            &default=`[[$flex5.top-bar]]`
+        ]]

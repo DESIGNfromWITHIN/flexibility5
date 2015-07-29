@@ -1,0 +1,32 @@
+<?php return array (
+  'class' => 'xPDOTransportVehicle',
+  'object' => 
+  array (
+    'source' => 'flexibility5-2.0.0-pl/xPDOTransportVehicle/57b2e5ca4a4d57b8c5d678858120cc3b/',
+    'target' => 'return MODX_CORE_PATH . \'packages/\';',
+    'name' => 'seopro-1.0.3-pl.transport.zip',
+  ),
+  'vehicle_class' => 'xPDOTransportVehicle',
+  'namespace' => 'flexibility5',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"flexibility5-2.0.0-pl\\/xPDOTransportVehicle\\/57b2e5ca4a4d57b8c5d678858120cc3b.resolve.seopro.resolver","type":"php","name":"resolve.seopro"}',
+    ),
+  ),
+  'validate' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"flexibility5-2.0.0-pl\\/xPDOTransportVehicle\\/57b2e5ca4a4d57b8c5d678858120cc3b.validate.seopro.validator","type":"php","name":"validate.seopro"}',
+    ),
+  ),
+  'vehicle_package' => 'transport',
+  'guid' => '976c9e3fde3d10883ae9ab7c674413ea',
+  'package' => '',
+  'signature' => '57b2e5ca4a4d57b8c5d678858120cc3b',
+  'native_key' => '976c9e3fde3d10883ae9ab7c674413ea',
+);

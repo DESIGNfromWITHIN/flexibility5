@@ -1,0 +1,32 @@
+<?php return array (
+  'class' => 'xPDOTransportVehicle',
+  'object' => 
+  array (
+    'source' => 'flexibility5-2.0.0-pl/xPDOTransportVehicle/7738dfd93fca62a7183c07cea22fb195/',
+    'target' => 'return MODX_CORE_PATH . \'packages/\';',
+    'name' => 'stercseo-1.1.1-pl.transport.zip',
+  ),
+  'vehicle_class' => 'xPDOTransportVehicle',
+  'namespace' => 'flexibility5',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"flexibility5-2.0.0-pl\\/xPDOTransportVehicle\\/7738dfd93fca62a7183c07cea22fb195.resolve.stercseo.resolver","type":"php","name":"resolve.stercseo"}',
+    ),
+  ),
+  'validate' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"flexibility5-2.0.0-pl\\/xPDOTransportVehicle\\/7738dfd93fca62a7183c07cea22fb195.validate.stercseo.validator","type":"php","name":"validate.stercseo"}',
+    ),
+  ),
+  'vehicle_package' => 'transport',
+  'guid' => '1a1926b3b159e90d42a170e97b545b0d',
+  'package' => '',
+  'signature' => '7738dfd93fca62a7183c07cea22fb195',
+  'native_key' => '1a1926b3b159e90d42a170e97b545b0d',
+);

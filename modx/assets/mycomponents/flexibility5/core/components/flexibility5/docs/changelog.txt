@@ -1,0 +1,12 @@
+Changelog for Flexibility 5
+
+Version: 2.0.0-pl
+Released: 29-07-2015
+---------------------------------
+Full rebuild!
+
+
+Version: 1.0.0-pl
+Released: 29-07-2015
+---------------------------------
+Initial Version

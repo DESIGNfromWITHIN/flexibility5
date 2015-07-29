@@ -1,0 +1,32 @@
+<?php return array (
+  'class' => 'xPDOTransportVehicle',
+  'object' => 
+  array (
+    'source' => 'flexibility5-2.0.0-pl/xPDOTransportVehicle/0274b0a8edda7315bea9f29ec482fc04/',
+    'target' => 'return MODX_CORE_PATH . \'packages/\';',
+    'name' => 'switch-1.1.0-pl.transport.zip',
+  ),
+  'vehicle_class' => 'xPDOTransportVehicle',
+  'namespace' => 'flexibility5',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"flexibility5-2.0.0-pl\\/xPDOTransportVehicle\\/0274b0a8edda7315bea9f29ec482fc04.resolve.switch.resolver","type":"php","name":"resolve.switch"}',
+    ),
+  ),
+  'validate' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"flexibility5-2.0.0-pl\\/xPDOTransportVehicle\\/0274b0a8edda7315bea9f29ec482fc04.validate.switch.validator","type":"php","name":"validate.switch"}',
+    ),
+  ),
+  'vehicle_package' => 'transport',
+  'guid' => '3ee4861dfa6f60dc06fdf1679c155707',
+  'package' => '',
+  'signature' => '0274b0a8edda7315bea9f29ec482fc04',
+  'native_key' => '3ee4861dfa6f60dc06fdf1679c155707',
+);

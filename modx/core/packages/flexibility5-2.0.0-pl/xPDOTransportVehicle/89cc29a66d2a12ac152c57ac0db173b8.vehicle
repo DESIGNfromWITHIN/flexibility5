@@ -1,0 +1,32 @@
+<?php return array (
+  'class' => 'xPDOTransportVehicle',
+  'object' => 
+  array (
+    'source' => 'flexibility5-2.0.0-pl/xPDOTransportVehicle/89cc29a66d2a12ac152c57ac0db173b8/',
+    'target' => 'return MODX_CORE_PATH . \'packages/\';',
+    'name' => 'formit-2.2.7-pl.transport.zip',
+  ),
+  'vehicle_class' => 'xPDOTransportVehicle',
+  'namespace' => 'flexibility5',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"flexibility5-2.0.0-pl\\/xPDOTransportVehicle\\/89cc29a66d2a12ac152c57ac0db173b8.resolve.formit.resolver","type":"php","name":"resolve.formit"}',
+    ),
+  ),
+  'validate' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"flexibility5-2.0.0-pl\\/xPDOTransportVehicle\\/89cc29a66d2a12ac152c57ac0db173b8.validate.formit.validator","type":"php","name":"validate.formit"}',
+    ),
+  ),
+  'vehicle_package' => 'transport',
+  'guid' => '763d015514e198542bfe29fd520ac211',
+  'package' => '',
+  'signature' => '89cc29a66d2a12ac152c57ac0db173b8',
+  'native_key' => '763d015514e198542bfe29fd520ac211',
+);

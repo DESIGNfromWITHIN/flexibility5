@@ -1,0 +1,24 @@
+[[$flexibility5.header]]
+    <section>
+      [[*flex5.show_slider:is=`yes`:then=`
+      [[$flex5.orbit_slider]]
+      `]]
+      <div class="row">
+        <div class="large-12 columns">
+          [[*content]]
+        </div>
+      </div>
+      [[!getImageList? 
+        &tvname=`nestedmigx`
+        &tpl=`flex5.sections_outer_tpl`
+      ]]
+      [[!switch?
+        &get=`[[++flex5.menu_type]]`
+        &c1=`top-bar`
+        &do1=``
+        &c2=`off-canvas`
+        &do2=`<!-- close the off-canvas menu --><a class="exit-off-canvas"></a></div></div>`
+        &default=``
+      ]]
+    </section>
+[[$flexibility5.footer]]

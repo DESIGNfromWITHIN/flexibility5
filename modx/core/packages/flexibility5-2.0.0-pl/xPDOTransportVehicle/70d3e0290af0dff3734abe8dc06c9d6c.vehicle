@@ -1,0 +1,32 @@
+<?php return array (
+  'class' => 'xPDOTransportVehicle',
+  'object' => 
+  array (
+    'source' => 'flexibility5-2.0.0-pl/xPDOTransportVehicle/70d3e0290af0dff3734abe8dc06c9d6c/',
+    'target' => 'return MODX_CORE_PATH . \'packages/\';',
+    'name' => 'tinymcerte-1.0.0-beta.transport.zip',
+  ),
+  'vehicle_class' => 'xPDOTransportVehicle',
+  'namespace' => 'flexibility5',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"flexibility5-2.0.0-pl\\/xPDOTransportVehicle\\/70d3e0290af0dff3734abe8dc06c9d6c.resolve.tinymcerte.resolver","type":"php","name":"resolve.tinymcerte"}',
+    ),
+  ),
+  'validate' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"flexibility5-2.0.0-pl\\/xPDOTransportVehicle\\/70d3e0290af0dff3734abe8dc06c9d6c.validate.tinymcerte.validator","type":"php","name":"validate.tinymcerte"}',
+    ),
+  ),
+  'vehicle_package' => 'transport',
+  'guid' => 'ea635b16b971b51371519f615b538003',
+  'package' => '',
+  'signature' => '70d3e0290af0dff3734abe8dc06c9d6c',
+  'native_key' => 'ea635b16b971b51371519f615b538003',
+);

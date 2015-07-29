@@ -1,0 +1,32 @@
+<?php return array (
+  'class' => 'xPDOTransportVehicle',
+  'object' => 
+  array (
+    'source' => 'flexibility5-2.0.0-pl/xPDOTransportVehicle/134d60cfbf01fc088cd4727bff9a77cd/',
+    'target' => 'return MODX_CORE_PATH . \'packages/\';',
+    'name' => 'getresources-1.6.1-pl.transport.zip',
+  ),
+  'vehicle_class' => 'xPDOTransportVehicle',
+  'namespace' => 'flexibility5',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"flexibility5-2.0.0-pl\\/xPDOTransportVehicle\\/134d60cfbf01fc088cd4727bff9a77cd.resolve.getresources.resolver","type":"php","name":"resolve.getresources"}',
+    ),
+  ),
+  'validate' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"flexibility5-2.0.0-pl\\/xPDOTransportVehicle\\/134d60cfbf01fc088cd4727bff9a77cd.validate.getresources.validator","type":"php","name":"validate.getresources"}',
+    ),
+  ),
+  'vehicle_package' => 'transport',
+  'guid' => '6b797d1c8d49c7a34d50ed9ff447720e',
+  'package' => '',
+  'signature' => '134d60cfbf01fc088cd4727bff9a77cd',
+  'native_key' => '6b797d1c8d49c7a34d50ed9ff447720e',
+);
