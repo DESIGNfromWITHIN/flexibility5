@@ -1,0 +1,32 @@
+<?php return array (
+  'class' => 'xPDOTransportVehicle',
+  'object' => 
+  array (
+    'source' => 'pthumb-2.3.3-pl/xPDOTransportVehicle/aea43ca81ababaf9acb1782bbccb4b19/',
+    'target' => 'return MODX_CORE_PATH . \'packages/\';',
+    'name' => 'resizer-1.0.1-pl.transport.zip',
+  ),
+  'vehicle_class' => 'xPDOTransportVehicle',
+  'namespace' => 'phpthumbof',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"pthumb-2.3.3-pl\\/xPDOTransportVehicle\\/aea43ca81ababaf9acb1782bbccb4b19.resolve.resizer.resolver","type":"php","name":"resolve.resizer"}',
+    ),
+  ),
+  'validate' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"pthumb-2.3.3-pl\\/xPDOTransportVehicle\\/aea43ca81ababaf9acb1782bbccb4b19.validate.resizer.validator","type":"php","name":"validate.resizer"}',
+    ),
+  ),
+  'vehicle_package' => 'transport',
+  'guid' => 'c52d6f1d76171a1c6f4c8a5dd0a358ca',
+  'package' => '',
+  'signature' => 'aea43ca81ababaf9acb1782bbccb4b19',
+  'native_key' => 'c52d6f1d76171a1c6f4c8a5dd0a358ca',
+);

@@ -1,0 +1,24 @@
+# ignore everything in this directory
+*.idlk
+/*
+
+# but not these
+!.gitignore
+!modx/
+!design/
+!sourcefiles/
+!database/
+
+modx/*
+!modx/assets/
+!modx/core/
+
+# ignore cache and config
+modx/.htaccess
+modx/core/cache/*
+modx/core/config/config.inc.php
+modx/config.core.php
+modx/manager/config.core.php
+modx/connectors/config.core.php
+modx/.DS_Store
+modx/assets/components/flexibility5/node_modules/*

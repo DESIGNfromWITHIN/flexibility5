@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'phpthumbof',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '7d79cd9ae6ff95b776aa26b81e9b949d',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'a0e869930c6ae0493ee5cf6ddc9ad100',
+  'native_key' => 'pthumb.s3_headers',
+  'object' => '{"key":"pthumb.s3_headers","value":"","xtype":"textarea","namespace":"phpthumbof","area":"Amazon S3","editedon":null}',
+);

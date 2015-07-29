@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'phpthumbof',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '5f17f127816ac916289f9258cb9d8f1d',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '8583a26f6eb9342d59dca7d995f75d4e',
+  'native_key' => 'phpthumbof.remote_timeout',
+  'object' => '{"key":"phpthumbof.remote_timeout","value":5,"xtype":"textfield","namespace":"phpthumbof","area":"Other","editedon":null}',
+);

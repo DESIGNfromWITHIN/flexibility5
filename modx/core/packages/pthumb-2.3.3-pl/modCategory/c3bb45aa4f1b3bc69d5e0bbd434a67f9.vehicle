@@ -1,0 +1,96 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Snippets' => 
+    array (
+      'bd106564dd16e1916902f1bac0335eef' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":1,"source":0,"property_preprocess":0,"name":"phpthumbof","description":"Identical to pthumb. Retained for backwards compatibility.\\nDocumentation: https:\\/\\/github.com\\/oo12\\/phpThumbOf","editor_type":0,"category":0,"cache_type":0,"snippet":"\\/**\\n * pThumb\\n * Copyright 2013-2014 Jason Grant\\n *\\n * Please see the GitHub page for documentation or to report bugs:\\n * https:\\/\\/github.com\\/oo12\\/phpThumbOf\\n *\\n * Forked from phpThumbOf 1.4.0\\n * Copyright 2009-2012 by Shaun McCormick <shaun@modx.com>\\n *\\n * pThumb is free software; you can redistribute it and\\/or modify it\\n * under the terms of the GNU General Public License as published by the Free\\n * Software Foundation; either version 2 of the License, or (at your option) any\\n * later version.\\n *\\n * pThumb is distributed in the hope that it will be useful, but WITHOUT ANY\\n * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR\\n * A PARTICULAR PURPOSE. See the GNU General Public License for more details.\\n *\\n * You should have received a copy of the GNU General Public License along with\\n * phpThumbOf; if not, write to the Free Software Foundation, Inc., 59 Temple\\n * Place, Suite 330, Boston, MA 02111-1307 USA\\n *\\n *\\/\\n\\/**\\n *\\n * @var modX $modx\\n * @var array $scriptProperties\\n * @var string $input\\n * @var string|array $options\\n *\\n *\\/\\n\\nif (empty($input)) {  \\/\\/ Exit quietly if no file name given\\n\\treturn;\\n}\\n\\n$scriptProperties[\'debug\'] = isset($debug) ? $debug : false;\\n\\n\\nstatic $pt_settings = array();\\n\\nif (empty($pt_settings)) {\\n\\tif (!$modx->loadClass(\'phpThumbOf\', MODX_CORE_PATH . \'components\\/phpthumbof\\/model\\/\', true, true)) {\\n\\t\\t$modx->log(modX::LOG_LEVEL_ERROR, \'[pThumb] Could not load phpThumbOf class.\');\\n\\t\\treturn $input;\\n\\t}\\n}\\n\\n$pThumb = new phpThumbOf($modx, $pt_settings, $scriptProperties);\\n\\n$result = $pThumb->createThumbnail($input, $options);\\n\\nif (!empty($toPlaceholder) || $result[\'outputDims\']) {\\n\\tif ($result[\'width\'] === \'\' && $result[\'file\'] && $dims = getimagesize($result[\'file\']) ) {\\n\\t\\t\\t$result[\'width\'] = $dims[0];\\n\\t\\t\\t$result[\'height\'] = $dims[1];\\n\\t}\\n\\tif (!empty($toPlaceholder)) {\\n\\t\\t$modx->setPlaceholders(array(\\n\\t\\t\\t$toPlaceholder => $result[\'src\'],\\n\\t\\t\\t\\"$toPlaceholder.width\\" => $result[\'width\'],\\n\\t\\t\\t\\"$toPlaceholder.height\\" => $result[\'height\']\\n\\t\\t));\\n\\t\\t$output = \'\';\\n\\t}\\n\\tif ($result[\'outputDims\']) {\\n\\t\\t$output = \\"src=\\\\\\"{$result[\'src\']}\\\\\\"\\" . ($result[\'width\'] ? \\" width=\\\\\\"{$result[\'width\']}\\\\\\" height=\\\\\\"{$result[\'height\']}\\\\\\"\\" : \'\');\\n\\t}\\n}\\nelse {\\n\\t$output = $result[\'src\'];\\n}\\n\\nif ($debug && $result[\'success\']) {  \\/\\/ if debugging is on and createThumbnail was successful, log the debug info\\n\\t$pThumb->debugmsg(isset($pThumb->phpThumb->debugmessages) ? \':: Processed ::\' : \\":: Loaded from cache: {$result[\'src\']}\\", true);\\n}\\n\\nreturn $output;","locked":0,"properties":"a:1:{s:5:\\"debug\\";a:7:{s:4:\\"name\\";s:5:\\"debug\\";s:4:\\"desc\\";s:22:\\"prop_pthumb.debug_desc\\";s:4:\\"type\\";s:13:\\"combo-boolean\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";b:0;s:7:\\"lexicon\\";s:18:\\"phpthumbof:default\\";s:4:\\"area\\";s:0:\\"\\";}}","moduleguid":"","static":0,"static_file":"","content":"\\/**\\n * pThumb\\n * Copyright 2013-2014 Jason Grant\\n *\\n * Please see the GitHub page for documentation or to report bugs:\\n * https:\\/\\/github.com\\/oo12\\/phpThumbOf\\n *\\n * Forked from phpThumbOf 1.4.0\\n * Copyright 2009-2012 by Shaun McCormick <shaun@modx.com>\\n *\\n * pThumb is free software; you can redistribute it and\\/or modify it\\n * under the terms of the GNU General Public License as published by the Free\\n * Software Foundation; either version 2 of the License, or (at your option) any\\n * later version.\\n *\\n * pThumb is distributed in the hope that it will be useful, but WITHOUT ANY\\n * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR\\n * A PARTICULAR PURPOSE. See the GNU General Public License for more details.\\n *\\n * You should have received a copy of the GNU General Public License along with\\n * phpThumbOf; if not, write to the Free Software Foundation, Inc., 59 Temple\\n * Place, Suite 330, Boston, MA 02111-1307 USA\\n *\\n *\\/\\n\\/**\\n *\\n * @var modX $modx\\n * @var array $scriptProperties\\n * @var string $input\\n * @var string|array $options\\n *\\n *\\/\\n\\nif (empty($input)) {  \\/\\/ Exit quietly if no file name given\\n\\treturn;\\n}\\n\\n$scriptProperties[\'debug\'] = isset($debug) ? $debug : false;\\n\\n\\nstatic $pt_settings = array();\\n\\nif (empty($pt_settings)) {\\n\\tif (!$modx->loadClass(\'phpThumbOf\', MODX_CORE_PATH . \'components\\/phpthumbof\\/model\\/\', true, true)) {\\n\\t\\t$modx->log(modX::LOG_LEVEL_ERROR, \'[pThumb] Could not load phpThumbOf class.\');\\n\\t\\treturn $input;\\n\\t}\\n}\\n\\n$pThumb = new phpThumbOf($modx, $pt_settings, $scriptProperties);\\n\\n$result = $pThumb->createThumbnail($input, $options);\\n\\nif (!empty($toPlaceholder) || $result[\'outputDims\']) {\\n\\tif ($result[\'width\'] === \'\' && $result[\'file\'] && $dims = getimagesize($result[\'file\']) ) {\\n\\t\\t\\t$result[\'width\'] = $dims[0];\\n\\t\\t\\t$result[\'height\'] = $dims[1];\\n\\t}\\n\\tif (!empty($toPlaceholder)) {\\n\\t\\t$modx->setPlaceholders(array(\\n\\t\\t\\t$toPlaceholder => $result[\'src\'],\\n\\t\\t\\t\\"$toPlaceholder.width\\" => $result[\'width\'],\\n\\t\\t\\t\\"$toPlaceholder.height\\" => $result[\'height\']\\n\\t\\t));\\n\\t\\t$output = \'\';\\n\\t}\\n\\tif ($result[\'outputDims\']) {\\n\\t\\t$output = \\"src=\\\\\\"{$result[\'src\']}\\\\\\"\\" . ($result[\'width\'] ? \\" width=\\\\\\"{$result[\'width\']}\\\\\\" height=\\\\\\"{$result[\'height\']}\\\\\\"\\" : \'\');\\n\\t}\\n}\\nelse {\\n\\t$output = $result[\'src\'];\\n}\\n\\nif ($debug && $result[\'success\']) {  \\/\\/ if debugging is on and createThumbnail was successful, log the debug info\\n\\t$pThumb->debugmsg(isset($pThumb->phpThumb->debugmessages) ? \':: Processed ::\' : \\":: Loaded from cache: {$result[\'src\']}\\", true);\\n}\\n\\nreturn $output;"}',
+        'guid' => '416c92571e1da907d6b2488963fc45e6',
+        'native_key' => 1,
+        'signature' => '7a4cd36379c402518f91dce66c00b8f6',
+      ),
+      'af54470eb60f5aa8573a8c22ef3ef004' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":2,"source":0,"property_preprocess":0,"name":"pthumb","description":"Identical to phpthumbof. Better for future compatibility.\\nDocumentation: https:\\/\\/github.com\\/oo12\\/phpThumbOf","editor_type":0,"category":0,"cache_type":0,"snippet":"\\/**\\n * pThumb\\n * Copyright 2013-2014 Jason Grant\\n *\\n * Please see the GitHub page for documentation or to report bugs:\\n * https:\\/\\/github.com\\/oo12\\/phpThumbOf\\n *\\n * Forked from phpThumbOf 1.4.0\\n * Copyright 2009-2012 by Shaun McCormick <shaun@modx.com>\\n *\\n * pThumb is free software; you can redistribute it and\\/or modify it\\n * under the terms of the GNU General Public License as published by the Free\\n * Software Foundation; either version 2 of the License, or (at your option) any\\n * later version.\\n *\\n * pThumb is distributed in the hope that it will be useful, but WITHOUT ANY\\n * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR\\n * A PARTICULAR PURPOSE. See the GNU General Public License for more details.\\n *\\n * You should have received a copy of the GNU General Public License along with\\n * phpThumbOf; if not, write to the Free Software Foundation, Inc., 59 Temple\\n * Place, Suite 330, Boston, MA 02111-1307 USA\\n *\\n *\\/\\n\\/**\\n *\\n * @var modX $modx\\n * @var array $scriptProperties\\n * @var string $input\\n * @var string|array $options\\n *\\n *\\/\\n\\nif (empty($input)) {  \\/\\/ Exit quietly if no file name given\\n\\treturn;\\n}\\n\\n$scriptProperties[\'debug\'] = isset($debug) ? $debug : false;\\n\\n\\nstatic $pt_settings = array();\\n\\nif (empty($pt_settings)) {\\n\\tif (!$modx->loadClass(\'phpThumbOf\', MODX_CORE_PATH . \'components\\/phpthumbof\\/model\\/\', true, true)) {\\n\\t\\t$modx->log(modX::LOG_LEVEL_ERROR, \'[pThumb] Could not load phpThumbOf class.\');\\n\\t\\treturn $input;\\n\\t}\\n}\\n\\n$pThumb = new phpThumbOf($modx, $pt_settings, $scriptProperties);\\n\\n$result = $pThumb->createThumbnail($input, $options);\\n\\nif (!empty($toPlaceholder) || $result[\'outputDims\']) {\\n\\tif ($result[\'width\'] === \'\' && $result[\'file\'] && $dims = getimagesize($result[\'file\']) ) {\\n\\t\\t\\t$result[\'width\'] = $dims[0];\\n\\t\\t\\t$result[\'height\'] = $dims[1];\\n\\t}\\n\\tif (!empty($toPlaceholder)) {\\n\\t\\t$modx->setPlaceholders(array(\\n\\t\\t\\t$toPlaceholder => $result[\'src\'],\\n\\t\\t\\t\\"$toPlaceholder.width\\" => $result[\'width\'],\\n\\t\\t\\t\\"$toPlaceholder.height\\" => $result[\'height\']\\n\\t\\t));\\n\\t\\t$output = \'\';\\n\\t}\\n\\tif ($result[\'outputDims\']) {\\n\\t\\t$output = \\"src=\\\\\\"{$result[\'src\']}\\\\\\"\\" . ($result[\'width\'] ? \\" width=\\\\\\"{$result[\'width\']}\\\\\\" height=\\\\\\"{$result[\'height\']}\\\\\\"\\" : \'\');\\n\\t}\\n}\\nelse {\\n\\t$output = $result[\'src\'];\\n}\\n\\nif ($debug && $result[\'success\']) {  \\/\\/ if debugging is on and createThumbnail was successful, log the debug info\\n\\t$pThumb->debugmsg(isset($pThumb->phpThumb->debugmessages) ? \':: Processed ::\' : \\":: Loaded from cache: {$result[\'src\']}\\", true);\\n}\\n\\nreturn $output;","locked":0,"properties":"a:1:{s:5:\\"debug\\";a:7:{s:4:\\"name\\";s:5:\\"debug\\";s:4:\\"desc\\";s:22:\\"prop_pthumb.debug_desc\\";s:4:\\"type\\";s:13:\\"combo-boolean\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";b:0;s:7:\\"lexicon\\";s:18:\\"phpthumbof:default\\";s:4:\\"area\\";s:0:\\"\\";}}","moduleguid":"","static":0,"static_file":"","content":"\\/**\\n * pThumb\\n * Copyright 2013-2014 Jason Grant\\n *\\n * Please see the GitHub page for documentation or to report bugs:\\n * https:\\/\\/github.com\\/oo12\\/phpThumbOf\\n *\\n * Forked from phpThumbOf 1.4.0\\n * Copyright 2009-2012 by Shaun McCormick <shaun@modx.com>\\n *\\n * pThumb is free software; you can redistribute it and\\/or modify it\\n * under the terms of the GNU General Public License as published by the Free\\n * Software Foundation; either version 2 of the License, or (at your option) any\\n * later version.\\n *\\n * pThumb is distributed in the hope that it will be useful, but WITHOUT ANY\\n * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR\\n * A PARTICULAR PURPOSE. See the GNU General Public License for more details.\\n *\\n * You should have received a copy of the GNU General Public License along with\\n * phpThumbOf; if not, write to the Free Software Foundation, Inc., 59 Temple\\n * Place, Suite 330, Boston, MA 02111-1307 USA\\n *\\n *\\/\\n\\/**\\n *\\n * @var modX $modx\\n * @var array $scriptProperties\\n * @var string $input\\n * @var string|array $options\\n *\\n *\\/\\n\\nif (empty($input)) {  \\/\\/ Exit quietly if no file name given\\n\\treturn;\\n}\\n\\n$scriptProperties[\'debug\'] = isset($debug) ? $debug : false;\\n\\n\\nstatic $pt_settings = array();\\n\\nif (empty($pt_settings)) {\\n\\tif (!$modx->loadClass(\'phpThumbOf\', MODX_CORE_PATH . \'components\\/phpthumbof\\/model\\/\', true, true)) {\\n\\t\\t$modx->log(modX::LOG_LEVEL_ERROR, \'[pThumb] Could not load phpThumbOf class.\');\\n\\t\\treturn $input;\\n\\t}\\n}\\n\\n$pThumb = new phpThumbOf($modx, $pt_settings, $scriptProperties);\\n\\n$result = $pThumb->createThumbnail($input, $options);\\n\\nif (!empty($toPlaceholder) || $result[\'outputDims\']) {\\n\\tif ($result[\'width\'] === \'\' && $result[\'file\'] && $dims = getimagesize($result[\'file\']) ) {\\n\\t\\t\\t$result[\'width\'] = $dims[0];\\n\\t\\t\\t$result[\'height\'] = $dims[1];\\n\\t}\\n\\tif (!empty($toPlaceholder)) {\\n\\t\\t$modx->setPlaceholders(array(\\n\\t\\t\\t$toPlaceholder => $result[\'src\'],\\n\\t\\t\\t\\"$toPlaceholder.width\\" => $result[\'width\'],\\n\\t\\t\\t\\"$toPlaceholder.height\\" => $result[\'height\']\\n\\t\\t));\\n\\t\\t$output = \'\';\\n\\t}\\n\\tif ($result[\'outputDims\']) {\\n\\t\\t$output = \\"src=\\\\\\"{$result[\'src\']}\\\\\\"\\" . ($result[\'width\'] ? \\" width=\\\\\\"{$result[\'width\']}\\\\\\" height=\\\\\\"{$result[\'height\']}\\\\\\"\\" : \'\');\\n\\t}\\n}\\nelse {\\n\\t$output = $result[\'src\'];\\n}\\n\\nif ($debug && $result[\'success\']) {  \\/\\/ if debugging is on and createThumbnail was successful, log the debug info\\n\\t$pThumb->debugmsg(isset($pThumb->phpThumb->debugmessages) ? \':: Processed ::\' : \\":: Loaded from cache: {$result[\'src\']}\\", true);\\n}\\n\\nreturn $output;"}',
+        'guid' => '8928fdce769b3a424ec7cf9f505baa48',
+        'native_key' => 2,
+        'signature' => '58cb35df5a4f8942b0d9d6beb3ca226d',
+      ),
+    ),
+    'Plugins' => 
+    array (
+      '21e34313266dc62c7ce0b72baaf78a19' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modPlugin',
+        'object' => '{"id":1,"source":0,"property_preprocess":0,"name":"phpThumbOfCacheManager","description":"Handles cache cleaning when clearing the Site Cache.","editor_type":0,"category":0,"cache_type":0,"plugincode":"\\/*\\n * Handles cache cleanup\\n * pThumb\\n * Copyright 2013 Jason Grant\\n *\\n * Please see the GitHub page for documentation or to report bugs:\\n * https:\\/\\/github.com\\/oo12\\/phpThumbOf\\n *\\n * pThumb is free software; you can redistribute it and\\/or modify it\\n * under the terms of the GNU General Public License as published by the Free\\n * Software Foundation; either version 2 of the License, or (at your option) any\\n * later version.\\n *\\n * pThumb is distributed in the hope that it will be useful, but WITHOUT ANY\\n * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR\\n * A PARTICULAR PURPOSE. See the GNU General Public License for more details.\\n *\\n * You should have received a copy of the GNU General Public License along with\\n * phpThumbOf; if not, write to the Free Software Foundation, Inc., 59 Temple\\n * Place, Suite 330, Boston, MA 02111-1307 USA\\n *\\/\\n\\nif ($modx->event->name === \'OnSiteRefresh\') {\\n\\tif (!$modx->loadClass(\'pThumbCacheCleaner\', MODX_CORE_PATH . \'components\\/phpthumbof\\/model\\/\', true, true)) {\\n\\t\\t$modx->log(modX::LOG_LEVEL_ERROR, \'[pThumb] Could not load pThumbCacheCleaner class.\');\\n\\t\\treturn;\\n\\t}\\n\\tstatic $pt_settings = array();\\n\\t$pThumb = new pThumbCacheCleaner($modx, $pt_settings, array(), true);\\n\\t$pThumb->cleanCache();\\n}","locked":0,"properties":null,"disabled":0,"moduleguid":"","static":0,"static_file":"","content":"\\/*\\n * Handles cache cleanup\\n * pThumb\\n * Copyright 2013 Jason Grant\\n *\\n * Please see the GitHub page for documentation or to report bugs:\\n * https:\\/\\/github.com\\/oo12\\/phpThumbOf\\n *\\n * pThumb is free software; you can redistribute it and\\/or modify it\\n * under the terms of the GNU General Public License as published by the Free\\n * Software Foundation; either version 2 of the License, or (at your option) any\\n * later version.\\n *\\n * pThumb is distributed in the hope that it will be useful, but WITHOUT ANY\\n * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR\\n * A PARTICULAR PURPOSE. See the GNU General Public License for more details.\\n *\\n * You should have received a copy of the GNU General Public License along with\\n * phpThumbOf; if not, write to the Free Software Foundation, Inc., 59 Temple\\n * Place, Suite 330, Boston, MA 02111-1307 USA\\n *\\/\\n\\nif ($modx->event->name === \'OnSiteRefresh\') {\\n\\tif (!$modx->loadClass(\'pThumbCacheCleaner\', MODX_CORE_PATH . \'components\\/phpthumbof\\/model\\/\', true, true)) {\\n\\t\\t$modx->log(modX::LOG_LEVEL_ERROR, \'[pThumb] Could not load pThumbCacheCleaner class.\');\\n\\t\\treturn;\\n\\t}\\n\\tstatic $pt_settings = array();\\n\\t$pThumb = new pThumbCacheCleaner($modx, $pt_settings, array(), true);\\n\\t$pThumb->cleanCache();\\n}"}',
+        'guid' => 'be0357862fe0739350663d3b5a1324b4',
+        'native_key' => 1,
+        'signature' => 'ac0b5c012c209d4af968b22e375b57f2',
+      ),
+    ),
+  ),
+  'abort_install_on_vehicle_fail' => true,
+  'related_object_attributes' => 
+  array (
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Plugins' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'phpthumbof',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"pthumb-2.3.3-pl\\/modCategory\\/c3bb45aa4f1b3bc69d5e0bbd434a67f9\\/0\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"phpthumbof"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"pthumb-2.3.3-pl\\/modCategory\\/c3bb45aa4f1b3bc69d5e0bbd434a67f9\\/1\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"phpthumbof"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"pthumb-2.3.3-pl\\/modCategory\\/c3bb45aa4f1b3bc69d5e0bbd434a67f9.plugin.resolver.resolver","type":"php","name":"plugin.resolver"}',
+    ),
+    3 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"pthumb-2.3.3-pl\\/modCategory\\/c3bb45aa4f1b3bc69d5e0bbd434a67f9.phpthumbof.resolver.resolver","type":"php","name":"phpthumbof.resolver"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '9d19974840f9a02b2b47ee43efea5a72',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => 'c3bb45aa4f1b3bc69d5e0bbd434a67f9',
+  'native_key' => 1,
+  'object' => '{"id":1,"parent":0,"category":"pThumb"}',
+);

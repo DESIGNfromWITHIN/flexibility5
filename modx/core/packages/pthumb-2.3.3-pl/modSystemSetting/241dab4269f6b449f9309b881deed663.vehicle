@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'phpthumbof',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '6a12cc30868ab2bf9494e0f8fa06cd60',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '241dab4269f6b449f9309b881deed663',
+  'native_key' => 'pthumb.ptcache_location',
+  'object' => '{"key":"pthumb.ptcache_location","value":"assets\\/image-cache","xtype":"textfield","namespace":"phpthumbof","area":"Cache [pThumb]","editedon":null}',
+);

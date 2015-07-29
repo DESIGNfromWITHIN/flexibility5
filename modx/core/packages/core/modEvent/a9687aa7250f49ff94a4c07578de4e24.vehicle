@@ -1,0 +1,12 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '6a225daf8fe64cd5e23ede2319c85bc6',
+  'package' => 'modx',
+  'class' => 'modEvent',
+  'signature' => 'a9687aa7250f49ff94a4c07578de4e24',
+  'native_key' => 'OnWebPagePrerender',
+  'object' => '{"name":"OnWebPagePrerender","service":5,"groupname":"System"}',
+);

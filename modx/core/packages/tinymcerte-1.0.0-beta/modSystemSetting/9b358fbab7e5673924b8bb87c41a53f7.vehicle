@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'tinymcerte',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '5ef10f14197094986f7d9c4b5c19a9b8',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '9b358fbab7e5673924b8bb87c41a53f7',
+  'native_key' => 'tinymcerte.blocks_format',
+  'object' => '{"key":"tinymcerte.blocks_format","value":"[{\\"title\\": \\"Paragraph\\", \\"format\\": \\"p\\"},{\\"title\\": \\"Blockquote\\", \\"format\\": \\"blockquote\\"},{\\"title\\": \\"Div\\", \\"format\\": \\"div\\"},{\\"title\\": \\"Pre\\", \\"format\\": \\"pre\\"}]","xtype":"textarea","namespace":"tinymcerte","area":"tinymcerte.style_formats","editedon":null}',
+);

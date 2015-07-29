@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'tinymcerte',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '9fbebe8bc30d5f14ee644812230dedd3',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'ae6ae52c881a620f9ab54fbec7abb838',
+  'native_key' => 'tinymcerte.plugins',
+  'object' => '{"key":"tinymcerte.plugins","value":"advlist autolink lists link image charmap print preview anchor visualblocks searchreplace code fullscreen insertdatetime media table contextmenu paste","xtype":"textfield","namespace":"tinymcerte","area":"default","editedon":null}',
+);

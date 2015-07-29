@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'phpthumbof',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '155eede5dcfd3aae7166ccc19388dc98',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'c182c89692be7d21ed30b2455e02a32a',
+  'native_key' => 'phpthumbof.use_resizer',
+  'object' => '{"key":"phpthumbof.use_resizer","value":false,"xtype":"combo-boolean","namespace":"phpthumbof","area":"Images","editedon":null}',
+);

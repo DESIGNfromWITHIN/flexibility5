@@ -1,0 +1,25 @@
+/**
+ * CSS file for MyComponent extra
+ *
+ * Copyright 2012-2013 by Bob Ray
+ * Created on 12/05/2012
+ *
+ * @package mycomponent
+ */
+
+div#my_component {
+    padding: 50px;
+    margin: 50px;
+}
+
+form#mc_form {
+    border:none;
+    text-align: left;
+    padding: 0;
+    margin:0;
+    width:50%
+
+}
+
+
+

@@ -1,0 +1,12 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'cd632441619dbc3efa59c16addb3874a',
+  'package' => 'modx',
+  'class' => 'modEvent',
+  'signature' => '7de9424b00f4ce03ab4f8f00b45d0303',
+  'native_key' => 'OnTemplateBeforeRemove',
+  'object' => '{"name":"OnTemplateBeforeRemove","service":1,"groupname":"Templates"}',
+);

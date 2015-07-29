@@ -1,0 +1,23 @@
+<header>
+    <nav class="top-bar" data-topbar role="navigation">
+        <ul class="title-area">
+            <li class="name">
+                [[++flex5.top-bar-title:is=`yes`:then=`
+                    <h1><a href="[[~1]]">[[++site_name]]</a></h1>
+                `]]
+                
+            </li>
+            <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+        </ul>
+        <section class="top-bar-section">
+            [[pdoMenu?
+                &parents=`0`
+                &level=`0`
+                &tplOuter=`@INLINE <ul class="[[+classnames]] [[++flex5.top-bar-align]]">[[+wrapper]]</ul>`
+                &tplInner=`@INLINE <ul class="[[+classnames]] dropdown">[[+wrapper]]</ul>`
+                &tplParentRow=`@INLINE <li class="[[+classnames]] has-dropdown"><a href="[[+link]]" [[+attributes]]>[[+pagetitle]]</a>[[+wrapper]]</li>`
+            ]]
+        </section>
+    </nav>
+</header>

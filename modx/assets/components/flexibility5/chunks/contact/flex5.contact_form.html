@@ -1,0 +1,37 @@
+[[!FormIt?
+  &hooks=`spam,email,redirect`
+  &emailTpl=`flex5.form_email_tpl`
+  &emailTo=`[[*flex5.form_to_email_adress]]`
+  &redirectTo=`[[*flex5.form_redirec_to_page]]`
+  &validate=`name:required,email:email:required,text:required:stripTags`
+]]
+<form action="[[~[[*id]]]]" method="post" class="form">
+  <input type="hidden" name="nospam:blank" value="[[+fi.nospam]]" />
+  <div class="row">
+    <div class="large-6 columns">
+      <label for="name">Name
+        <input type="text" placeholder="Name" [[!+fi.error.name:notempty=`class="error"`]] name="name" id="name" value="[[!+fi.name]]" />
+      </label>
+      [[!+fi.error.name:notempty=`[[!+fi.error.name]]`]]
+    </div>
+    <div class="large-6 columns">
+      <label>E-mail
+        <input type="email" name="email" placeholder="E-mail" [[!+fi.error.email:notempty=`class="error"`]] id="email" value="[[!+fi.email]]" />
+      </label>
+      [[!+fi.error.email:notempty=`[[!+fi.error.email]]`]]
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-12 columns">
+      <label>Message
+        <textarea name="text" placeholder="Message" [[!+fi.error.text:notempty=`class="error"`]] id="text" cols="55" rows="7" value="[[!+fi.text]]">[[!+fi.text]]</textarea>
+      </label>
+      [[!+fi.error.text:notempty=`[[!+fi.error.text]]`]]
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-12 columns">
+      <input type="submit" value="Send Contact Inquiry" class="button" />
+    </div>
+  </div>
+</form>

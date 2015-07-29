@@ -1,0 +1,32 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => true,
+  'abort_install_on_vehicle_fail' => true,
+  'namespace' => 'resizer',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"resizer-1.0.1-pl\\/modCategory\\/871b922d9b47bc4f59231fab00169162\\/0\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"resizer"}',
+    ),
+  ),
+  'validate' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"resizer-1.0.1-pl\\/modCategory\\/871b922d9b47bc4f59231fab00169162.resizer.validator.validator","type":"php","name":"resizer.validator"}',
+    ),
+  ),
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'b54f6060d885b3e2cb169b64cd2c8527',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '871b922d9b47bc4f59231fab00169162',
+  'native_key' => 1,
+  'object' => '{"id":1,"parent":0,"category":"Resizer"}',
+);
