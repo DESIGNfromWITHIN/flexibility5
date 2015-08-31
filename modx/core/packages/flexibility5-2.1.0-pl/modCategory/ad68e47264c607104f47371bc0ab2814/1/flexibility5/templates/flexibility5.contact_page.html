@@ -1,0 +1,18 @@
+[[$flexibility5.header]]
+    <section>
+      <div class="row">
+        <div class="large-12 columns">
+          [[*content]]
+          [[$flex5.contact_form]]
+        </div>
+      </div>
+      [[!switch?
+        &get=`[[++flex5.menu_type]]`
+        &c1=`top-bar`
+        &do1=``
+        &c2=`off-canvas`
+        &do2=`<!-- close the off-canvas menu --><a class="exit-off-canvas"></a></div></div>`
+        &default=``
+      ]]
+    </section>
+[[$flexibility5.footer]]

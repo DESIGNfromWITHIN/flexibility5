@@ -785,7 +785,7 @@ foreach ($categories as $k => $categoryName) {
                   'tv',
                   'settings',
                   'resource',
-                  'propertyset'
+                  'propertyset',
              ), $resolvers);
         $helper->sendLog(modX::LOG_LEVEL_INFO,
             $modx->lexicon('mc_processing_resolvers'));
@@ -872,6 +872,19 @@ $attr = array(
     'license' => file_get_contents($sources['docs'] . 'license.txt'),
     'readme' => file_get_contents($sources['docs'] . 'readme.txt'),
     'changelog' => file_get_contents($sources['docs'] . 'changelog.txt'),
+    'requires' => array(
+        'ace' => '>=1.6.4',
+        'clientconfig' => '>=1.3.1',
+        'formit' => '>=2.2.7',
+        'getresources' => '>=1.6.1',
+        'migx' => '>=2.9.4',
+        'pdotools' => '>=2.1.8',
+        'pthumb' => '>=2.3.3',
+        'resizer' => '>=1.0.1',
+        'simplesearch' => '>=1.9.2',
+        'switch' => '>=1.1.0',
+        'ckeditor' => '>=1.3.0',
+    ),
 );
 
 if ($hasSetupOptions && !empty($props['install.options'])) {

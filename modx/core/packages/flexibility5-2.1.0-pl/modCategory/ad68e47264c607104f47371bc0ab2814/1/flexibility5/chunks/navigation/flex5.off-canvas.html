@@ -1,0 +1,23 @@
+<div class="off-canvas-wrap" data-offcanvas>
+    <div class="inner-wrap">
+        <header>
+            <nav class="tab-bar">
+                <section class="[[++flex5.top-bar-align]]-small">
+                <a class="[[++flex5.top-bar-align]]-off-canvas-toggle menu-icon" href="#"><span></span></a>
+                </section>
+
+                <section class="middle tab-bar-section">
+                <h1 class="title">[[++site_name]]</h1>
+                </section>
+            </nav>
+            <!-- Off Canvas Menu -->
+            <aside class="[[++flex5.top-bar-align]]-off-canvas-menu">
+                [[pdoMenu?
+                    &parents=`0`
+                    &level=`0`
+                    &tplOuter=`@INLINE <ul class="[[+classnames]] off-canvas-list">[[+wrapper]]</ul>`
+                    &tplInner=`@INLINE <ul class="[[+classnames]]">[[+wrapper]]</ul>`
+                    &tplParentRow=`@INLINE <li class="[[+classnames]]"><a href="[[+link]]" [[+attributes]]>[[+pagetitle]]</a>[[+wrapper]]</li>`
+                ]]
+            </aside>
+        </header>

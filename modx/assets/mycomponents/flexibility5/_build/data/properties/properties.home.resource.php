@@ -3,7 +3,7 @@
  * Properties file for Home resource
  *
  * Copyright 2015 by Menno Pietersen info@mpthemes.com
- * Created on 07-29-2015
+ * Created on 08-31-2015
  *
  * @package flexibility5
  * @subpackage build

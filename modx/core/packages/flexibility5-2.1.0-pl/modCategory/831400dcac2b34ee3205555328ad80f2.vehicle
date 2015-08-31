@@ -1,0 +1,53 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Chunks' => 
+    array (
+      '001fea506071c62e314a0c7a9f4dcf94' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":1,"source":0,"property_preprocess":0,"name":"flex5.sections_inner_tpl","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<div class=\\"[[!switch? &get=`[[+total]]` &c1=`1` &do1=`small-12 large-12 column` &c2=`2` &do2=`small-12 medium-6 large-6 columns` &c3=`3` &do3=`small-12 large-4 columns` &c4=`4` &do4=`small-12 medium-6 large-3 columns` &default=`12`]]\\">\\r\\n\\t[[+column]]\\r\\n<\\/div>","locked":0,"properties":"a:0:{}","static":0,"static_file":"","content":"<div class=\\"[[!switch? &get=`[[+total]]` &c1=`1` &do1=`small-12 large-12 column` &c2=`2` &do2=`small-12 medium-6 large-6 columns` &c3=`3` &do3=`small-12 large-4 columns` &c4=`4` &do4=`small-12 medium-6 large-3 columns` &default=`12`]]\\">\\r\\n\\t[[+column]]\\r\\n<\\/div>"}',
+        'guid' => 'afcd42791be8bd51be2a71babd4462b9',
+        'native_key' => 1,
+        'signature' => '807932cc9cdd8c0c30e4a3f83f88bd5c',
+      ),
+      'cb43bbce7ad212c4c102c75ca508af53' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":2,"source":0,"property_preprocess":0,"name":"flex5.sections_outer_tpl","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<div class=\\"row\\">\\r\\n\\t[[!getImageList? \\r\\n\\t\\t&tvname=`nestedmigx`\\r\\n\\t\\t&value=`[[+columns]]`\\r\\n\\t\\t&tpl=`flex5.sections_inner_tpl`\\r\\n\\t]]\\r\\n<\\/div>","locked":0,"properties":"a:0:{}","static":0,"static_file":"","content":"<div class=\\"row\\">\\r\\n\\t[[!getImageList? \\r\\n\\t\\t&tvname=`nestedmigx`\\r\\n\\t\\t&value=`[[+columns]]`\\r\\n\\t\\t&tpl=`flex5.sections_inner_tpl`\\r\\n\\t]]\\r\\n<\\/div>"}',
+        'guid' => '525f247d03c44b0e4d5d84d9fcdb8a54',
+        'native_key' => 2,
+        'signature' => 'aa355c1c129ec72a4a1ecda3a90bef64',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'flexibility5',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'ee8ab40a83940a669b7666223bb8da13',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '831400dcac2b34ee3205555328ad80f2',
+  'native_key' => 4,
+  'object' => '{"id":4,"parent":0,"category":"Sections"}',
+);

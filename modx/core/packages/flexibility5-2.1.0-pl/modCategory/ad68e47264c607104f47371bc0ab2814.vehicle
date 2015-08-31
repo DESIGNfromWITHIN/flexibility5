@@ -1,0 +1,104 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Chunks' => 
+    array (
+      '2039881f7543948e4ebc930a07da2157' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":1,"source":0,"property_preprocess":0,"name":"flexibility5.header","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<!DOCTYPE html>\\r\\n<html class=\\"no-js\\" lang=\\"[[++cultureKey]]\\">\\r\\n    <head>\\r\\n        <base href=\\"[[++site_url]]\\" \\/>\\r\\n        <meta charset=\\"utf-8\\">\\r\\n        <meta http-equiv=\\"X-UA-Compatible\\" content=\\"IE=edge,chrome=1\\">\\r\\n        <title>[[*longtitle:notempty=`[[*longtitle]]`:default=`[[*pagetitle]]`]] | [[++site_name]]<\\/title>\\r\\n        <meta name=\\"description\\" content=\\"[[*description]]\\">\\r\\n        <meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1.0\\"\\/>\\r\\n        <link rel=\\"icon\\" type=\\"image\\/png\\" href=\\"[[++flex5.favicon]]\\">\\r\\n        <link rel=\\"stylesheet\\" href=\\"assets\\/components\\/flexibility5\\/css\\/foundation.css\\" \\/>\\r\\n        <script src=\\"assets\\/components\\/flexibility5\\/js\\/vendor\\/modernizr.js\\"><\\/script>\\r\\n    <\\/head>\\r\\n    <body>\\r\\n        [[!switch?\\r\\n            &get=`[[++flex5.menu_type]]`\\r\\n            &c1=`top-bar`\\r\\n            &do1=`[[$flex5.top-bar]]`\\r\\n            &c2=`off-canvas`\\r\\n            &do2=`[[$flex5.off-canvas]]`\\r\\n            &default=`[[$flex5.top-bar]]`\\r\\n        ]]","locked":0,"properties":"a:0:{}","static":0,"static_file":"","content":"<!DOCTYPE html>\\r\\n<html class=\\"no-js\\" lang=\\"[[++cultureKey]]\\">\\r\\n    <head>\\r\\n        <base href=\\"[[++site_url]]\\" \\/>\\r\\n        <meta charset=\\"utf-8\\">\\r\\n        <meta http-equiv=\\"X-UA-Compatible\\" content=\\"IE=edge,chrome=1\\">\\r\\n        <title>[[*longtitle:notempty=`[[*longtitle]]`:default=`[[*pagetitle]]`]] | [[++site_name]]<\\/title>\\r\\n        <meta name=\\"description\\" content=\\"[[*description]]\\">\\r\\n        <meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1.0\\"\\/>\\r\\n        <link rel=\\"icon\\" type=\\"image\\/png\\" href=\\"[[++flex5.favicon]]\\">\\r\\n        <link rel=\\"stylesheet\\" href=\\"assets\\/components\\/flexibility5\\/css\\/foundation.css\\" \\/>\\r\\n        <script src=\\"assets\\/components\\/flexibility5\\/js\\/vendor\\/modernizr.js\\"><\\/script>\\r\\n    <\\/head>\\r\\n    <body>\\r\\n        [[!switch?\\r\\n            &get=`[[++flex5.menu_type]]`\\r\\n            &c1=`top-bar`\\r\\n            &do1=`[[$flex5.top-bar]]`\\r\\n            &c2=`off-canvas`\\r\\n            &do2=`[[$flex5.off-canvas]]`\\r\\n            &default=`[[$flex5.top-bar]]`\\r\\n        ]]"}',
+        'guid' => 'a8101d09af42e2a21aa9ce9af4ea9693',
+        'native_key' => 1,
+        'signature' => '29694e9926b100cf39ee56ce2524aae3',
+      ),
+      '99d3dee88681945382b49750018ebc18' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":2,"source":0,"property_preprocess":0,"name":"flexibility5.footer","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"\\t<footer>\\r\\n\\t\\t<div class=\\"row\\">\\r\\n\\t        <div class=\\"large-12 columns\\">\\r\\n\\t        \\t[[++flex5.footer_content]]\\r\\n\\t        <\\/div>\\r\\n\\t      <\\/div>\\r\\n\\t<\\/footer>\\r\\n\\t<script src=\\"assets\\/components\\/flexibility5\\/js\\/vendor\\/jquery.js\\"><\\/script>\\r\\n    <script src=\\"assets\\/components\\/flexibility5\\/js\\/foundation.min.js\\"><\\/script>\\r\\n    <script>\\r\\n    \\t$(document).foundation();\\r\\n    <\\/script>\\r\\n  <\\/body>\\r\\n<\\/html>","locked":0,"properties":"a:0:{}","static":0,"static_file":"","content":"\\t<footer>\\r\\n\\t\\t<div class=\\"row\\">\\r\\n\\t        <div class=\\"large-12 columns\\">\\r\\n\\t        \\t[[++flex5.footer_content]]\\r\\n\\t        <\\/div>\\r\\n\\t      <\\/div>\\r\\n\\t<\\/footer>\\r\\n\\t<script src=\\"assets\\/components\\/flexibility5\\/js\\/vendor\\/jquery.js\\"><\\/script>\\r\\n    <script src=\\"assets\\/components\\/flexibility5\\/js\\/foundation.min.js\\"><\\/script>\\r\\n    <script>\\r\\n    \\t$(document).foundation();\\r\\n    <\\/script>\\r\\n  <\\/body>\\r\\n<\\/html>"}',
+        'guid' => 'ef3d6ad4a0c3af605870455fb3a5db61',
+        'native_key' => 2,
+        'signature' => '16dcd4601954a229e37ee7a508a241bf',
+      ),
+    ),
+    'Templates' => 
+    array (
+      'ddc920f717966868a1e20ba2b9fdc20f' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'templatename',
+        'class' => 'modTemplate',
+        'object' => '{"id":1,"source":0,"property_preprocess":0,"templatename":"Contact page","description":"","editor_type":0,"category":0,"icon":"","template_type":0,"content":"[[$flexibility5.header]]\\n    <section>\\n      <div class=\\"row\\">\\n        <div class=\\"large-12 columns\\">\\n          [[*content]]\\n          [[$flex5.contact_form]]\\n        <\\/div>\\n      <\\/div>\\n      [[!switch?\\n        &get=`[[++flex5.menu_type]]`\\n        &c1=`top-bar`\\n        &do1=``\\n        &c2=`off-canvas`\\n        &do2=`<!-- close the off-canvas menu --><a class=\\"exit-off-canvas\\"><\\/a><\\/div><\\/div>`\\n        &default=``\\n      ]]\\n    <\\/section>\\n[[$flexibility5.footer]]","locked":0,"properties":"a:0:{}","static":0,"static_file":""}',
+        'guid' => 'b82fe3ca3a0a1dccd930f2160c81b739',
+        'native_key' => 1,
+        'signature' => '2dbb493be9e7dcb88605e110ee12304e',
+      ),
+      '5fd90c6e729c2d691cc1ff3ec9dbbb11' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'templatename',
+        'class' => 'modTemplate',
+        'object' => '{"id":2,"source":0,"property_preprocess":0,"templatename":"Basic page","description":"","editor_type":0,"category":0,"icon":"","template_type":0,"content":"[[$flexibility5.header]]\\n    <section>\\n      [[*flex5.show_slider:is=`yes`:then=`\\n      [[$flex5.orbit_slider]]\\n      `]]\\n      <div class=\\"row\\">\\n        <div class=\\"large-12 columns\\">\\n          [[*content]]\\n        <\\/div>\\n      <\\/div>\\n      [[!getImageList? \\n        &tvname=`nestedmigx`\\n        &tpl=`flex5.sections_outer_tpl`\\n      ]]\\n      [[!switch?\\n        &get=`[[++flex5.menu_type]]`\\n        &c1=`top-bar`\\n        &do1=``\\n        &c2=`off-canvas`\\n        &do2=`<!-- close the off-canvas menu --><a class=\\"exit-off-canvas\\"><\\/a><\\/div><\\/div>`\\n        &default=``\\n      ]]\\n    <\\/section>\\n[[$flexibility5.footer]]","locked":0,"properties":"a:0:{}","static":0,"static_file":""}',
+        'guid' => 'b9e03f4e9f0499625a8da2e40988bf25',
+        'native_key' => 2,
+        'signature' => 'fd4641b1bff9fd79dfec6f72af2c7723',
+      ),
+    ),
+  ),
+  'abort_install_on_vehicle_fail' => true,
+  'related_object_attributes' => 
+  array (
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Templates' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'templatename',
+    ),
+  ),
+  'namespace' => 'flexibility5',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"flexibility5-2.1.0-pl\\/modCategory\\/ad68e47264c607104f47371bc0ab2814\\/0\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"flexibility5"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"flexibility5-2.1.0-pl\\/modCategory\\/ad68e47264c607104f47371bc0ab2814\\/1\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"flexibility5"}',
+    ),
+  ),
+  'validate' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"flexibility5-2.1.0-pl\\/modCategory\\/ad68e47264c607104f47371bc0ab2814.flexibility5.validator.validator","type":"php","name":"flexibility5.validator"}',
+    ),
+  ),
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '95e7721fd06d3b6bdb9bc29b6770f928',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => 'ad68e47264c607104f47371bc0ab2814',
+  'native_key' => 1,
+  'object' => '{"id":1,"parent":0,"category":"Flexibility 5"}',
+);

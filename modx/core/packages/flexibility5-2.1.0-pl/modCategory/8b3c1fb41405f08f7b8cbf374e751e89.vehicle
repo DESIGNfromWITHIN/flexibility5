@@ -1,0 +1,84 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Chunks' => 
+    array (
+      'a44c9a9d5b7c7cb44a3b7564846d2a1c' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":1,"source":0,"property_preprocess":0,"name":"form_email_tpl","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"[[+name]] ([[+email]]) Wrote: <br \\/>\\n[[+text]]","locked":0,"properties":"a:0:{}","static":0,"static_file":"","content":"[[+name]] ([[+email]]) Wrote: <br \\/>\\n[[+text]]"}',
+        'guid' => 'bc59472689201817d89d4cdd94b3f1de',
+        'native_key' => 1,
+        'signature' => 'ee57d742b16ec791993686f5df138dd1',
+      ),
+      'e95fade5061d39fa4968b37031494d93' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":2,"source":0,"property_preprocess":0,"name":"flex5.contact_form","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"[[!FormIt?\\r\\n  &hooks=`spam,email,redirect`\\r\\n  &emailTpl=`flex5.form_email_tpl`\\r\\n  &emailTo=`[[*flex5.form_to_email_adress]]`\\r\\n  &redirectTo=`[[*flex5.form_redirec_to_page]]`\\r\\n  &validate=`name:required,email:email:required,text:required:stripTags`\\r\\n]]\\r\\n<form action=\\"[[~[[*id]]]]\\" method=\\"post\\" class=\\"form\\">\\r\\n  <input type=\\"hidden\\" name=\\"nospam:blank\\" value=\\"[[+fi.nospam]]\\" \\/>\\r\\n  <div class=\\"row\\">\\r\\n    <div class=\\"large-6 columns\\">\\r\\n      <label for=\\"name\\">Name\\r\\n        <input type=\\"text\\" placeholder=\\"Name\\" [[!+fi.error.name:notempty=`class=\\"error\\"`]] name=\\"name\\" id=\\"name\\" value=\\"[[!+fi.name]]\\" \\/>\\r\\n      <\\/label>\\r\\n      [[!+fi.error.name:notempty=`[[!+fi.error.name]]`]]\\r\\n    <\\/div>\\r\\n    <div class=\\"large-6 columns\\">\\r\\n      <label>E-mail\\r\\n        <input type=\\"email\\" name=\\"email\\" placeholder=\\"E-mail\\" [[!+fi.error.email:notempty=`class=\\"error\\"`]] id=\\"email\\" value=\\"[[!+fi.email]]\\" \\/>\\r\\n      <\\/label>\\r\\n      [[!+fi.error.email:notempty=`[[!+fi.error.email]]`]]\\r\\n    <\\/div>\\r\\n  <\\/div>\\r\\n  <div class=\\"row\\">\\r\\n    <div class=\\"large-12 columns\\">\\r\\n      <label>Message\\r\\n        <textarea name=\\"text\\" placeholder=\\"Message\\" [[!+fi.error.text:notempty=`class=\\"error\\"`]] id=\\"text\\" cols=\\"55\\" rows=\\"7\\" value=\\"[[!+fi.text]]\\">[[!+fi.text]]<\\/textarea>\\r\\n      <\\/label>\\r\\n      [[!+fi.error.text:notempty=`[[!+fi.error.text]]`]]\\r\\n    <\\/div>\\r\\n  <\\/div>\\r\\n  <div class=\\"row\\">\\r\\n    <div class=\\"large-12 columns\\">\\r\\n      <input type=\\"submit\\" value=\\"Send Contact Inquiry\\" class=\\"button\\" \\/>\\r\\n    <\\/div>\\r\\n  <\\/div>\\r\\n<\\/form>","locked":0,"properties":"a:0:{}","static":0,"static_file":"","content":"[[!FormIt?\\r\\n  &hooks=`spam,email,redirect`\\r\\n  &emailTpl=`flex5.form_email_tpl`\\r\\n  &emailTo=`[[*flex5.form_to_email_adress]]`\\r\\n  &redirectTo=`[[*flex5.form_redirec_to_page]]`\\r\\n  &validate=`name:required,email:email:required,text:required:stripTags`\\r\\n]]\\r\\n<form action=\\"[[~[[*id]]]]\\" method=\\"post\\" class=\\"form\\">\\r\\n  <input type=\\"hidden\\" name=\\"nospam:blank\\" value=\\"[[+fi.nospam]]\\" \\/>\\r\\n  <div class=\\"row\\">\\r\\n    <div class=\\"large-6 columns\\">\\r\\n      <label for=\\"name\\">Name\\r\\n        <input type=\\"text\\" placeholder=\\"Name\\" [[!+fi.error.name:notempty=`class=\\"error\\"`]] name=\\"name\\" id=\\"name\\" value=\\"[[!+fi.name]]\\" \\/>\\r\\n      <\\/label>\\r\\n      [[!+fi.error.name:notempty=`[[!+fi.error.name]]`]]\\r\\n    <\\/div>\\r\\n    <div class=\\"large-6 columns\\">\\r\\n      <label>E-mail\\r\\n        <input type=\\"email\\" name=\\"email\\" placeholder=\\"E-mail\\" [[!+fi.error.email:notempty=`class=\\"error\\"`]] id=\\"email\\" value=\\"[[!+fi.email]]\\" \\/>\\r\\n      <\\/label>\\r\\n      [[!+fi.error.email:notempty=`[[!+fi.error.email]]`]]\\r\\n    <\\/div>\\r\\n  <\\/div>\\r\\n  <div class=\\"row\\">\\r\\n    <div class=\\"large-12 columns\\">\\r\\n      <label>Message\\r\\n        <textarea name=\\"text\\" placeholder=\\"Message\\" [[!+fi.error.text:notempty=`class=\\"error\\"`]] id=\\"text\\" cols=\\"55\\" rows=\\"7\\" value=\\"[[!+fi.text]]\\">[[!+fi.text]]<\\/textarea>\\r\\n      <\\/label>\\r\\n      [[!+fi.error.text:notempty=`[[!+fi.error.text]]`]]\\r\\n    <\\/div>\\r\\n  <\\/div>\\r\\n  <div class=\\"row\\">\\r\\n    <div class=\\"large-12 columns\\">\\r\\n      <input type=\\"submit\\" value=\\"Send Contact Inquiry\\" class=\\"button\\" \\/>\\r\\n    <\\/div>\\r\\n  <\\/div>\\r\\n<\\/form>"}',
+        'guid' => '27998c0ec69638adda5db13b2e8c6fc3',
+        'native_key' => 2,
+        'signature' => '21793d1e4cd5e3ca45d88cebd39a2b75',
+      ),
+    ),
+    'TemplateVars' => 
+    array (
+      '021f27f2351c6dbb1a9b93473a9883f9' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":1,"source":0,"property_preprocess":0,"type":"email","name":"flex5.form_to_email_adress","caption":"Email to adress","description":"","editor_type":0,"category":0,"locked":0,"elements":"","rank":1,"display":"default","default_text":"info@youremail.com","properties":"a:0:{}","input_properties":"a:3:{s:10:\\"allowBlank\\";s:5:\\"false\\";s:9:\\"maxLength\\";s:0:\\"\\";s:9:\\"minLength\\";s:0:\\"\\";}","output_properties":"a:0:{}","static":0,"static_file":"","content":"info@youremail.com"}',
+        'guid' => 'fa6542e48c34a3791f08b6c857e33d1b',
+        'native_key' => 1,
+        'signature' => 'e4df39cf7b7a9ed862ea804a25a80a18',
+      ),
+      '2136ed7fa81574ff56fe8519e5e92c7c' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":2,"source":0,"property_preprocess":0,"type":"resourcelist","name":"flex5.form_redirec_to_page","caption":"Thank you page","description":"","editor_type":0,"category":0,"locked":0,"elements":"","rank":2,"display":"default","default_text":"12","properties":"a:0:{}","input_properties":"a:8:{s:10:\\"allowBlank\\";s:1:\\"0\\";s:8:\\"showNone\\";s:1:\\"0\\";s:7:\\"parents\\";s:0:\\"\\";s:5:\\"depth\\";s:2:\\"10\\";s:13:\\"includeParent\\";s:1:\\"1\\";s:19:\\"limitRelatedContext\\";s:1:\\"0\\";s:5:\\"where\\";s:0:\\"\\";s:5:\\"limit\\";s:1:\\"0\\";}","output_properties":"a:0:{}","static":0,"static_file":"","content":"12"}',
+        'guid' => '9b1f8ae63d612b0538d0e7bd53fe12ae',
+        'native_key' => 2,
+        'signature' => 'c6833da9fe18b2ccd736e32c5e2a302b',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'TemplateVars' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'flexibility5',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '151f92ba9e9ed431c5b92e7c6d8c6cda',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '8b3c1fb41405f08f7b8cbf374e751e89',
+  'native_key' => 2,
+  'object' => '{"id":2,"parent":0,"category":"Contact"}',
+);

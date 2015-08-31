@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'stercseo',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '9429a174a14ab2753e916552364fac6e',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '565e39b2ff2de3f2624b92fc8d47a5a3',
+  'native_key' => 'stercseo.sitemap',
+  'object' => '{"key":"stercseo.sitemap","value":"1","xtype":"combo-boolean","namespace":"stercseo","area":"general","editedon":null}',
+);

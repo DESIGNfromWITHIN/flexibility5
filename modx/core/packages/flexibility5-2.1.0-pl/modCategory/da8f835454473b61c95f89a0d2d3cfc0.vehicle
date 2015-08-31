@@ -1,0 +1,116 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Chunks' => 
+    array (
+      '269fd59b7aeac1190b4a7b0bbbe1050d' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":1,"source":0,"property_preprocess":0,"name":"flex5.orbit_slider_tpl","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<li>\\r\\n\\t<img src=\\"[[+image]]\\" alt=\\"[[+title]]\\" \\/>\\r\\n\\t<div class=\\"orbit-caption\\">[[+description]]<\\/div>\\r\\n<\\/li>","locked":0,"properties":"a:0:{}","static":0,"static_file":"","content":"<li>\\r\\n\\t<img src=\\"[[+image]]\\" alt=\\"[[+title]]\\" \\/>\\r\\n\\t<div class=\\"orbit-caption\\">[[+description]]<\\/div>\\r\\n<\\/li>"}',
+        'guid' => 'cf2eb0f21a64d0616327f4cd30fbe16c',
+        'native_key' => 1,
+        'signature' => '1215d265f1e74b18c4154036fb84e8ae',
+      ),
+      '7e60e94c3e2bcadd2e6b10e14acbd109' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":2,"source":0,"property_preprocess":0,"name":"flex5.orbit_slider","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<div class=\\"row\\">\\r\\n  <div class=\\"large-12 columns\\">\\r\\n    <ul class=\\"example-orbit\\" data-orbit data-options=\\"\\r\\n    animation_speed: 1500,\\r\\n    animation: \'slide\',\\r\\n    navigation_arrows: true,\\r\\n    slide_number: true,\\r\\n    slide_number_text: \'of\',\\r\\n    bullets: true,\\r\\n    timer: true;\\r\\n    \\">\\r\\n      [[!getImageList? \\r\\n        &tvname=`flex5.slider_items`\\r\\n        &tpl=`flex5.orbit_slider_tpl`\\r\\n      ]]\\r\\n    <\\/ul>\\r\\n  <\\/div>\\r\\n<\\/div>","locked":0,"properties":"a:0:{}","static":0,"static_file":"","content":"<div class=\\"row\\">\\r\\n  <div class=\\"large-12 columns\\">\\r\\n    <ul class=\\"example-orbit\\" data-orbit data-options=\\"\\r\\n    animation_speed: 1500,\\r\\n    animation: \'slide\',\\r\\n    navigation_arrows: true,\\r\\n    slide_number: true,\\r\\n    slide_number_text: \'of\',\\r\\n    bullets: true,\\r\\n    timer: true;\\r\\n    \\">\\r\\n      [[!getImageList? \\r\\n        &tvname=`flex5.slider_items`\\r\\n        &tpl=`flex5.orbit_slider_tpl`\\r\\n      ]]\\r\\n    <\\/ul>\\r\\n  <\\/div>\\r\\n<\\/div>"}',
+        'guid' => 'dcffefc6d13eeecf3edc33a82867b323',
+        'native_key' => 2,
+        'signature' => 'b2c8d206d16278b3fb5acb0015eb97a4',
+      ),
+    ),
+    'TemplateVars' => 
+    array (
+      'f993f8becb12427caf9fa00a60acb552' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":1,"source":0,"property_preprocess":0,"type":"listbox","name":"flex5.show_slider","caption":"Show slider","description":"Display a Orbit slider on this page?","editor_type":0,"category":0,"locked":0,"elements":"Yes==yes||No==no","rank":2,"display":"default","default_text":"no","properties":"a:0:{}","input_properties":"a:7:{s:10:\\"allowBlank\\";s:5:\\"false\\";s:9:\\"listWidth\\";s:0:\\"\\";s:5:\\"title\\";s:0:\\"\\";s:9:\\"typeAhead\\";s:5:\\"false\\";s:14:\\"typeAheadDelay\\";s:3:\\"250\\";s:14:\\"forceSelection\\";s:5:\\"false\\";s:13:\\"listEmptyText\\";s:0:\\"\\";}","output_properties":"a:0:{}","static":0,"static_file":"","content":"no"}',
+        'guid' => '9124261223049ffbd004956abf13f14e',
+        'native_key' => 1,
+        'signature' => '58a4e954a24817424408ea352bda91d2',
+      ),
+      'c5a0e50a2880fdd9f7af00a401100ddc' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":2,"source":0,"property_preprocess":0,"type":"migx","name":"flex5.slider_items","caption":"Slider items","description":"Create, edit and sort the slider items.","editor_type":0,"category":0,"locked":0,"elements":"","rank":1,"display":"default","default_text":"","properties":"a:0:{}","input_properties":"a:7:{s:7:\\"configs\\";s:0:\\"\\";s:8:\\"formtabs\\";s:228:\\"[\\n{\\"caption\\":\\"Slide\\", \\"fields\\": [\\n    {\\"field\\":\\"title\\",\\"caption\\":\\"Slide title\\"},\\n    {\\"field\\":\\"image\\",\\"caption\\":\\"Image\\",\\"inputTVtype\\":\\"image\\"},\\n    {\\"field\\":\\"description\\",\\"caption\\":\\"Slide content\\",\\"inputTVtype\\":\\"richtext\\"}\\n]}\\n] \\";s:7:\\"columns\\";s:196:\\"[\\n{\\"header\\": \\"Slide name\\", \\"width\\": \\"160\\", \\"sortable\\": \\"true\\", \\"dataIndex\\": \\"title\\"},\\n{\\"header\\": \\"Image\\", \\"width\\": \\"50\\", \\"sortable\\": \\"false\\", \\"dataIndex\\": \\"image\\",\\"renderer\\": \\"this.renderImage\\"}\\n]\\";s:7:\\"btntext\\";s:0:\\"\\";s:10:\\"previewurl\\";s:0:\\"\\";s:10:\\"jsonvarkey\\";s:0:\\"\\";s:19:\\"autoResourceFolders\\";s:5:\\"false\\";}","output_properties":"a:0:{}","static":0,"static_file":"","content":""}',
+        'guid' => 'dd0a6fd88375757246a539040f39f79d',
+        'native_key' => 2,
+        'signature' => '109b73a7e96b42e18015ac638b02932f',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'TemplateVars' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'flexibility5',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"flexibility5-2.1.0-pl\\/modCategory\\/da8f835454473b61c95f89a0d2d3cfc0.category.resolver.resolver","type":"php","name":"category.resolver"}',
+    ),
+    1 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"flexibility5-2.1.0-pl\\/modCategory\\/da8f835454473b61c95f89a0d2d3cfc0.addcontent.resolver.resolver","type":"php","name":"addcontent.resolver"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"flexibility5-2.1.0-pl\\/modCategory\\/da8f835454473b61c95f89a0d2d3cfc0.tv.resolver.resolver","type":"php","name":"tv.resolver"}',
+    ),
+    3 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"flexibility5-2.1.0-pl\\/modCategory\\/da8f835454473b61c95f89a0d2d3cfc0.settings.resolver.resolver","type":"php","name":"settings.resolver"}',
+    ),
+    4 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"flexibility5-2.1.0-pl\\/modCategory\\/da8f835454473b61c95f89a0d2d3cfc0.resource.resolver.resolver","type":"php","name":"resource.resolver"}',
+    ),
+    5 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"flexibility5-2.1.0-pl\\/modCategory\\/da8f835454473b61c95f89a0d2d3cfc0.flexibility5.resolver.resolver","type":"php","name":"flexibility5.resolver"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '011e7af94ae2391f4ae2c2598de20ebf',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => 'da8f835454473b61c95f89a0d2d3cfc0',
+  'native_key' => 5,
+  'object' => '{"id":5,"parent":0,"category":"Slider"}',
+);

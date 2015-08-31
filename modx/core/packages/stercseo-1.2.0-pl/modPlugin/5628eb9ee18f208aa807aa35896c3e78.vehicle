@@ -1,0 +1,142 @@
+<?php return array (
+  'unique_key' => 'name',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'PluginEvents' => 
+    array (
+      '0bfd66af2e811edb9e1635cb48607883' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => false,
+        'unique_key' => 
+        array (
+          0 => 'pluginid',
+          1 => 'event',
+        ),
+        'class' => 'modPluginEvent',
+        'object' => '{"pluginid":0,"event":"OnDocFormPrerender","priority":0,"propertyset":0}',
+        'guid' => 'c47e8ec7ddec8f8534cb7cd04ddfd064',
+        'native_key' => 
+        array (
+          0 => 0,
+          1 => 'OnDocFormPrerender',
+        ),
+        'signature' => '4a2139193ad19b5eab22755406144869',
+      ),
+      '5ad87098043ea38d26dd10008282f17e' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => false,
+        'unique_key' => 
+        array (
+          0 => 'pluginid',
+          1 => 'event',
+        ),
+        'class' => 'modPluginEvent',
+        'object' => '{"pluginid":0,"event":"OnBeforeDocFormSave","priority":0,"propertyset":0}',
+        'guid' => 'd3162e9f1508d1128892c95a9fe564cf',
+        'native_key' => 
+        array (
+          0 => 0,
+          1 => 'OnBeforeDocFormSave',
+        ),
+        'signature' => 'd8cb69a356a341207751605bae7512a2',
+      ),
+      'f9fb681663cd7b4c6896a1ab5c8248aa' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => false,
+        'unique_key' => 
+        array (
+          0 => 'pluginid',
+          1 => 'event',
+        ),
+        'class' => 'modPluginEvent',
+        'object' => '{"pluginid":0,"event":"OnLoadWebDocument","priority":0,"propertyset":0}',
+        'guid' => '40d4d0389f5c5d942597cafc59756623',
+        'native_key' => 
+        array (
+          0 => 0,
+          1 => 'OnLoadWebDocument',
+        ),
+        'signature' => 'b24cab46cd35b892b1935f11dd7eab89',
+      ),
+      'f2f1aa67c86d9a6aa7ccafc664794085' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => false,
+        'unique_key' => 
+        array (
+          0 => 'pluginid',
+          1 => 'event',
+        ),
+        'class' => 'modPluginEvent',
+        'object' => '{"pluginid":0,"event":"OnPageNotFound","priority":0,"propertyset":0}',
+        'guid' => '78eaeb7e48f97944c0d17387962e4f12',
+        'native_key' => 
+        array (
+          0 => 0,
+          1 => 'OnPageNotFound',
+        ),
+        'signature' => '408b9266a35a86f0558abc193c11cfe1',
+      ),
+      'f81b2bcc294debb7945fac429abb5f4f' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => false,
+        'unique_key' => 
+        array (
+          0 => 'pluginid',
+          1 => 'event',
+        ),
+        'class' => 'modPluginEvent',
+        'object' => '{"pluginid":0,"event":"OnResourceDuplicate","priority":0,"propertyset":0}',
+        'guid' => 'd005cbe77793818006fa9d700f607b86',
+        'native_key' => 
+        array (
+          0 => 0,
+          1 => 'OnResourceDuplicate',
+        ),
+        'signature' => '496d04d814e717d30355800ac41b9294',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'PluginEvents' => 
+    array (
+      'preserve_keys' => true,
+      'update_object' => false,
+      'unique_key' => 
+      array (
+        0 => 'pluginid',
+        1 => 'event',
+      ),
+    ),
+  ),
+  'namespace' => 'stercseo',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"stercseo-1.2.0-pl\\/modPlugin\\/5628eb9ee18f208aa807aa35896c3e78\\/0\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"stercseo"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"stercseo-1.2.0-pl\\/modPlugin\\/5628eb9ee18f208aa807aa35896c3e78\\/1\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"stercseo"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'd53bca7db322098d17742dcbeeda1c57',
+  'package' => 'modx',
+  'class' => 'modPlugin',
+  'signature' => '5628eb9ee18f208aa807aa35896c3e78',
+  'native_key' => 1,
+  'object' => '{"id":1,"source":0,"property_preprocess":0,"name":"StercSEO","description":"Plugin to render the seo tab and save all the data","editor_type":0,"category":0,"cache_type":0,"plugincode":"\\/**\\n * StercSEO\\n *\\n * Copyright 2013 by Wieger Sloot, Sterc internet & marketing <modx@sterc.nl>\\n *\\n * This file is part of StercSEO.\\n *\\n * StercSEO is free software; you can redistribute it and\\/or modify it under the\\n * terms of the GNU General Public License as published by the Free Software\\n * Foundation; either version 2 of the License, or (at your option) any later\\n * version.\\n *\\n * StercSEO is distributed in the hope that it will be useful, but WITHOUT ANY\\n * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR\\n * A PARTICULAR PURPOSE. See the GNU General Public License for more details.\\n *\\n * You should have received a copy of the GNU General Public License along with\\n * StercSEO; if not, write to the Free Software Foundation, Inc., 59 Temple Place,\\n * Suite 330, Boston, MA 02111-1307 USA\\n *\\n * @package stercseo\\n *\\/\\n\\/**\\n * StercSEO Plugin\\n *\\n *\\n * Events:\\n * OnDocFormPrerender,OnDocFormSave,OnHandleRequest,OnPageNotFound\\n *\\n * @author Wieger Sloot, Sterc internet & marketing <modx@sterc.nl>\\n *\\n * @package stercseo\\n *\\n *\\/\\n$stercseo = $modx->getService(\'stercseo\',\'StercSEO\',$modx->getOption(\'stercseo.core_path\',null,$modx->getOption(\'core_path\').\'components\\/stercseo\\/\').\'model\\/stercseo\\/\',array());\\n\\nif (!($stercseo instanceof StercSEO)) return;\\n\\nswitch ($modx->event->name) {\\n\\tcase \'OnDocFormPrerender\':\\n\\t\\t$resource =& $modx->event->params[\'resource\'];\\n\\t\\tif($resource){\\n\\t\\t\\t\\/\\/First check if SEOTab is allowed in this context\\n\\t\\t\\tif(!$stercseo->isAllowed($resource->get(\'context_key\'))) return;\\n\\t\\t\\t$properties = $resource->getProperties(\'stercseo\');\\n\\t\\t}\\n\\t\\tif(empty($properties)){\\n\\t\\t\\t$properties = array(\\n\\t\\t\\t\\t\'index\' => $modx->getOption(\'stercseo.index\', null, \'1\'),\\n\\t\\t\\t\\t\'follow\' => $modx->getOption(\'stercseo.follow\', null, \'1\'),\\n\\t\\t\\t\\t\'sitemap\' => $modx->getOption(\'stercseo.sitemap\', null, \'1\'),\\n\\t\\t\\t\\t\'priority\' => $modx->getOption(\'stercseo.priority\', null, \'0.5\'),\\n\\t\\t\\t\\t\'changefreq\' => $modx->getOption(\'stercseo.changefreq\', null, \'weekly\'),\\n\\t\\t\\t\\t\\/\\/\'urls\' => $modx->fromJSON($_POST[\'urls\'])\\n\\t\\t\\t);\\n\\t\\t}\\n\\t\\t\\/\\/$output .= \'<div id=\\"stercseo-box\\">\'.$errorMessage.$outputLanguageItems.\'<\\/div>\';\\n\\t\\t\\/\\/$modx->event->output($output);\\n\\t\\t$modx->regClientStartupHTMLBlock(\'<script type=\\"text\\/javascript\\">\\n        Ext.onReady(function() {\\n            StercSEO.config = \'.$modx->toJSON($stercseo->config).\';\\n            StercSEO.config.connector_url = \\"\'.$stercseo->config[\'connectorUrl\'].\'\\";\\n            StercSEO.record = \'.$modx->toJSON($properties).\';\\n        });\\n        <\\/script>\');\\n\\t    $version = $modx->getVersionData();\\n\\n\\t\\t\\/* include CSS and JS*\\/\\n\\t\\tif($version[\'version\'] == 2 && $version[\'major_version\'] == 2){\\n\\t    \\t$modx->regClientCSS($stercseo->config[\'cssUrl\'].\'stercseo.css\');\\n\\t    }\\n\\t\\t$modx->regClientStartupScript($stercseo->config[\'jsUrl\'].\'mgr\\/stercseo.js\');\\n\\t\\t$modx->regClientStartupScript($stercseo->config[\'jsUrl\'].\'mgr\\/sections\\/resource.js\');\\n\\t\\t$modx->regClientStartupScript($stercseo->config[\'jsUrl\'].\'mgr\\/widgets\\/resource.grid.js\');\\n\\t\\t$modx->regClientStartupScript($stercseo->config[\'jsUrl\'].\'mgr\\/widgets\\/resource.vtabs.js\');\\n\\n\\t\\t\\/\\/add lexicon\\n\\t\\t$modx->controller->addLexiconTopic(\'stercseo:default\');\\n\\n\\t\\tbreak;\\n\\n\\tcase \'OnBeforeDocFormSave\':\\n\\t        $oldResource = ($mode == \'upd\') ? $modx->getObject(\'modResource\',$resource->get(\'id\')) : $resource;\\n\\t\\t\\tif(!$stercseo->isAllowed($oldResource->get(\'context_key\'))) return;\\n\\t\\t\\t$properties = $oldResource->getProperties(\'stercseo\');\\n\\t\\t\\tif($_POST[\'urls\'] != \'false\' && isset($_POST[\'urls\'])){\\n\\t\\t\\t\\tif($mode == \'upd\'){\\n\\t\\t\\t\\t\\t$newProperties = array(\\n\\t\\t\\t\\t\\t\\t\'index\' => (isset($_POST[\'index\']) ? $_POST[\'index\'] : $properties[\'index\']),\\n\\t\\t\\t\\t\\t\\t\'follow\' => (isset($_POST[\'follow\']) ? $_POST[\'follow\'] : $properties[\'follow\']),\\n\\t\\t\\t\\t\\t\\t\'sitemap\' => (isset($_POST[\'sitemap\']) ? $_POST[\'sitemap\'] : $properties[\'sitemap\']),\\n\\t\\t\\t\\t\\t\\t\'priority\' => (isset($_POST[\'priority\']) ? $_POST[\'priority\'] : $properties[\'priority\']),\\n\\t\\t\\t\\t\\t\\t\'changefreq\' => (isset($_POST[\'changefreq\']) ? $_POST[\'changefreq\'] : $properties[\'changefreq\']),\\n\\t\\t\\t\\t\\t\\t\'urls\' => $modx->fromJSON($_POST[\'urls\'])\\n\\t\\t\\t\\t\\t);\\n\\t\\t\\t\\t}else{\\n\\t\\t\\t\\t\\t$newProperties = array(\\n\\t\\t\\t\\t\\t\\t\'index\' => (isset($_POST[\'index\']) ? $_POST[\'index\'] : $modx->getOption(\'stercseo.index\', null, \'1\')),\\n\\t\\t\\t\\t\\t\\t\'follow\' => (isset($_POST[\'follow\']) ? $_POST[\'follow\'] : $modx->getOption(\'stercseo.follow\', null, \'1\')),\\n\\t\\t\\t\\t\\t\\t\'sitemap\' => (isset($_POST[\'sitemap\']) ? $_POST[\'sitemap\'] : $modx->getOption(\'stercseo.sitemap\', null, \'1\')),\\n\\t\\t\\t\\t\\t\\t\'priority\' => (isset($_POST[\'priority\']) ? $_POST[\'priority\'] : $modx->getOption(\'stercseo.priority\', null, \'0.5\')),\\n\\t\\t\\t\\t\\t\\t\'changefreq\' => (isset($_POST[\'changefreq\']) ? $_POST[\'changefreq\'] : $modx->getOption(\'stercseo.changefreq\', null, \'weekly\')),\\n\\t\\t\\t\\t\\t\\t\'urls\' => $modx->fromJSON($_POST[\'urls\'])\\n\\t\\t\\t\\t\\t);\\n\\t\\t\\t\\t}\\n\\t\\t\\t}else{\\n\\t\\t\\t   \\tif($mode == \'upd\'){\\n\\t\\t\\t\\t\\t$newProperties = array(\\n\\t\\t\\t\\t\\t\\t\'index\' => (isset($_POST[\'index\']) ? $_POST[\'index\'] : $properties[\'index\']),\\n\\t\\t\\t\\t\\t\\t\'follow\' => (isset($_POST[\'follow\']) ? $_POST[\'follow\'] : $properties[\'follow\']),\\n\\t\\t\\t\\t\\t\\t\'sitemap\' => (isset($_POST[\'sitemap\']) ? $_POST[\'sitemap\'] : $properties[\'sitemap\']),\\n\\t\\t\\t\\t\\t\\t\'priority\' => (isset($_POST[\'priority\']) ? $_POST[\'priority\'] : $properties[\'priority\']),\\n\\t\\t\\t\\t\\t\\t\'changefreq\' => (isset($_POST[\'changefreq\']) ? $_POST[\'changefreq\'] : $properties[\'changefreq\']),\\n\\t\\t\\t\\t\\t\\t\'urls\' => $properties[\'urls\']\\n\\t\\t\\t\\t\\t);\\n\\t\\t\\t\\t}else{\\n\\t\\t\\t\\t\\t$newProperties = array(\\n\\t\\t\\t\\t\\t\\t\'index\' => (isset($_POST[\'index\']) ? $_POST[\'index\'] : $modx->getOption(\'stercseo.index\', null, \'1\')),\\n\\t\\t\\t\\t\\t\\t\'follow\' => (isset($_POST[\'follow\']) ? $_POST[\'follow\'] : $modx->getOption(\'stercseo.follow\', null, \'1\')),\\n\\t\\t\\t\\t\\t\\t\'sitemap\' => (isset($_POST[\'sitemap\']) ? $_POST[\'sitemap\'] : $modx->getOption(\'stercseo.sitemap\', null, \'1\')),\\n\\t\\t\\t\\t\\t\\t\'priority\' => (isset($_POST[\'priority\']) ? $_POST[\'priority\'] : $modx->getOption(\'stercseo.priority\', null, \'0.5\')),\\n\\t\\t\\t\\t\\t\\t\'changefreq\' => (isset($_POST[\'changefreq\']) ? $_POST[\'changefreq\'] : $modx->getOption(\'stercseo.changefreq\', null, \'weekly\')),\\n\\t\\t\\t\\t\\t\\t\'urls\' => $properties[\'urls\']\\n\\t\\t\\t\\t\\t);\\n\\t\\t\\t\\t}\\n\\t\\t\\t}\\n\\t\\t\\tif($oldResource->get(\'uri\') != $resource->get(\'uri\') && $oldResource->get(\'uri\') != \'\'){\\n\\/\\/$modx->log(modX::LOG_LEVEL_ERROR, \'OLD: \'.$oldResource->get(\'uri\').\' - NEW: \'. $resource->get(\'uri\'));\\n\\t\\t\\t\\t$newProperties[\'urls\'][] = array(\'url\' => $oldResource->get(\'uri\'));\\n\\t\\t\\t}\\n\\n        \\t$resource->setProperties($newProperties,\'stercseo\');\\n\\t\\tbreak;\\n\\tcase \'OnLoadWebDocument\':\\n\\t\\tif($modx->resource){\\n\\t\\t\\tif(!$stercseo->isAllowed($modx->resource->get(\'context_key\'))) return;\\n\\t\\t\\t$properties = $modx->resource->getProperties(\'stercseo\');\\n\\t\\t\\t$metaContent = array(\'noopd\', \'noydir\');\\n\\t\\t\\tif(!$properties[\'index\']) $metaContent[] = \'noindex\';\\n\\t\\t\\tif(!$properties[\'follow\']) $metaContent[] = \'nofollow\';\\n\\t\\t\\t$modx->setPlaceholder(\'seoTab.robotsTag\',implode(\',\', $metaContent));\\n\\t\\t}\\n\\t\\tbreak;\\n\\n\\tcase \'OnPageNotFound\':\\n\\t\\t$url = $_REQUEST[$modx->getOption(\'request_param_alias\', null, \'q\')];\\n\\t\\t$convertedUrl = str_replace(\'\\/\', \'_\\/\', ltrim($url, \'\\/\'));\\n\\t\\t$w = array(\\n\\t\\t\\t\'properties:LIKE\' => \'%\\"\'.$convertedUrl.\'\\"%\'\\n\\t\\t);\\n\\t\\tif($modx->getOption(\'stercseo.context-aware-alias\', null, \'0\')){\\n\\t\\t\\t$w[\'context_key\'] = $modx->context->key;\\n\\t\\t}\\n\\t\\t$alreadyExists = $modx->getObject(\'modResource\', $w);\\n\\t\\tif($alreadyExists){\\n\\t\\t\\t$id = $modx->makeUrl($alreadyExists->get(\'id\'));\\n\\t\\t\\t$modx->sendRedirect($id, 0, \'REDIRECT_HEADER\', \'HTTP\\/1.1 301 Moved Permanently\');\\n\\t\\t}\\n\\t\\tbreak;\\n\\tcase \'OnResourceBeforeSort\':\\n\\t\\tforeach($nodes as $node) {\\n\\t\\t\\t$oldResource = $modx->getObject(\'modResource\',$node[\'id\']);\\n\\t\\t\\t$resource \\t = $modx->getObject(\'modResource\',$node[\'id\']);\\n\\t\\t\\t$resource->set(\'parent\', $node[\'parent\']);\\n\\n\\t\\t\\tif(!$stercseo->isAllowed($resource->get(\'context_key\'))) return;\\n\\n\\t\\t\\tif($oldResource->get(\'uri\') != $resource->getAliasPath($resource->get(\'alias\')) && $oldResource->get(\'uri\') != \'\'){\\n\\t\\t\\t\\t$newProperties = $oldResource->getProperties(\'stercseo\');\\n\\t\\t\\t\\t$newProperties[\'urls\'][] = array(\'url\' => $oldResource->get(\'uri\'));\\n\\t\\t\\t\\t$oldResource->setProperties($newProperties,\'stercseo\');\\n\\t\\t\\t\\t$oldResource->save();\\n\\t\\t\\t}\\n\\t\\t}\\n\\t\\tbreak;\\n\\tcase \'OnResourceDuplicate\':\\n\\t\\tif(!$stercseo->isAllowed($newResource->get(\'context_key\'))) return;\\n\\t\\t$props = $newResource->getProperties(\'stercseo\');\\n\\t\\t$props[\'urls\'] = array();\\n\\t\\t$newResource->setProperties($props,\'stercseo\');\\n\\t\\t$newResource->save();\\n\\t\\tbreak;\\n\\n}\\nreturn;","locked":0,"properties":null,"disabled":0,"moduleguid":"","static":0,"static_file":"","content":"\\/**\\n * StercSEO\\n *\\n * Copyright 2013 by Wieger Sloot, Sterc internet & marketing <modx@sterc.nl>\\n *\\n * This file is part of StercSEO.\\n *\\n * StercSEO is free software; you can redistribute it and\\/or modify it under the\\n * terms of the GNU General Public License as published by the Free Software\\n * Foundation; either version 2 of the License, or (at your option) any later\\n * version.\\n *\\n * StercSEO is distributed in the hope that it will be useful, but WITHOUT ANY\\n * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR\\n * A PARTICULAR PURPOSE. See the GNU General Public License for more details.\\n *\\n * You should have received a copy of the GNU General Public License along with\\n * StercSEO; if not, write to the Free Software Foundation, Inc., 59 Temple Place,\\n * Suite 330, Boston, MA 02111-1307 USA\\n *\\n * @package stercseo\\n *\\/\\n\\/**\\n * StercSEO Plugin\\n *\\n *\\n * Events:\\n * OnDocFormPrerender,OnDocFormSave,OnHandleRequest,OnPageNotFound\\n *\\n * @author Wieger Sloot, Sterc internet & marketing <modx@sterc.nl>\\n *\\n * @package stercseo\\n *\\n *\\/\\n$stercseo = $modx->getService(\'stercseo\',\'StercSEO\',$modx->getOption(\'stercseo.core_path\',null,$modx->getOption(\'core_path\').\'components\\/stercseo\\/\').\'model\\/stercseo\\/\',array());\\n\\nif (!($stercseo instanceof StercSEO)) return;\\n\\nswitch ($modx->event->name) {\\n\\tcase \'OnDocFormPrerender\':\\n\\t\\t$resource =& $modx->event->params[\'resource\'];\\n\\t\\tif($resource){\\n\\t\\t\\t\\/\\/First check if SEOTab is allowed in this context\\n\\t\\t\\tif(!$stercseo->isAllowed($resource->get(\'context_key\'))) return;\\n\\t\\t\\t$properties = $resource->getProperties(\'stercseo\');\\n\\t\\t}\\n\\t\\tif(empty($properties)){\\n\\t\\t\\t$properties = array(\\n\\t\\t\\t\\t\'index\' => $modx->getOption(\'stercseo.index\', null, \'1\'),\\n\\t\\t\\t\\t\'follow\' => $modx->getOption(\'stercseo.follow\', null, \'1\'),\\n\\t\\t\\t\\t\'sitemap\' => $modx->getOption(\'stercseo.sitemap\', null, \'1\'),\\n\\t\\t\\t\\t\'priority\' => $modx->getOption(\'stercseo.priority\', null, \'0.5\'),\\n\\t\\t\\t\\t\'changefreq\' => $modx->getOption(\'stercseo.changefreq\', null, \'weekly\'),\\n\\t\\t\\t\\t\\/\\/\'urls\' => $modx->fromJSON($_POST[\'urls\'])\\n\\t\\t\\t);\\n\\t\\t}\\n\\t\\t\\/\\/$output .= \'<div id=\\"stercseo-box\\">\'.$errorMessage.$outputLanguageItems.\'<\\/div>\';\\n\\t\\t\\/\\/$modx->event->output($output);\\n\\t\\t$modx->regClientStartupHTMLBlock(\'<script type=\\"text\\/javascript\\">\\n        Ext.onReady(function() {\\n            StercSEO.config = \'.$modx->toJSON($stercseo->config).\';\\n            StercSEO.config.connector_url = \\"\'.$stercseo->config[\'connectorUrl\'].\'\\";\\n            StercSEO.record = \'.$modx->toJSON($properties).\';\\n        });\\n        <\\/script>\');\\n\\t    $version = $modx->getVersionData();\\n\\n\\t\\t\\/* include CSS and JS*\\/\\n\\t\\tif($version[\'version\'] == 2 && $version[\'major_version\'] == 2){\\n\\t    \\t$modx->regClientCSS($stercseo->config[\'cssUrl\'].\'stercseo.css\');\\n\\t    }\\n\\t\\t$modx->regClientStartupScript($stercseo->config[\'jsUrl\'].\'mgr\\/stercseo.js\');\\n\\t\\t$modx->regClientStartupScript($stercseo->config[\'jsUrl\'].\'mgr\\/sections\\/resource.js\');\\n\\t\\t$modx->regClientStartupScript($stercseo->config[\'jsUrl\'].\'mgr\\/widgets\\/resource.grid.js\');\\n\\t\\t$modx->regClientStartupScript($stercseo->config[\'jsUrl\'].\'mgr\\/widgets\\/resource.vtabs.js\');\\n\\n\\t\\t\\/\\/add lexicon\\n\\t\\t$modx->controller->addLexiconTopic(\'stercseo:default\');\\n\\n\\t\\tbreak;\\n\\n\\tcase \'OnBeforeDocFormSave\':\\n\\t        $oldResource = ($mode == \'upd\') ? $modx->getObject(\'modResource\',$resource->get(\'id\')) : $resource;\\n\\t\\t\\tif(!$stercseo->isAllowed($oldResource->get(\'context_key\'))) return;\\n\\t\\t\\t$properties = $oldResource->getProperties(\'stercseo\');\\n\\t\\t\\tif($_POST[\'urls\'] != \'false\' && isset($_POST[\'urls\'])){\\n\\t\\t\\t\\tif($mode == \'upd\'){\\n\\t\\t\\t\\t\\t$newProperties = array(\\n\\t\\t\\t\\t\\t\\t\'index\' => (isset($_POST[\'index\']) ? $_POST[\'index\'] : $properties[\'index\']),\\n\\t\\t\\t\\t\\t\\t\'follow\' => (isset($_POST[\'follow\']) ? $_POST[\'follow\'] : $properties[\'follow\']),\\n\\t\\t\\t\\t\\t\\t\'sitemap\' => (isset($_POST[\'sitemap\']) ? $_POST[\'sitemap\'] : $properties[\'sitemap\']),\\n\\t\\t\\t\\t\\t\\t\'priority\' => (isset($_POST[\'priority\']) ? $_POST[\'priority\'] : $properties[\'priority\']),\\n\\t\\t\\t\\t\\t\\t\'changefreq\' => (isset($_POST[\'changefreq\']) ? $_POST[\'changefreq\'] : $properties[\'changefreq\']),\\n\\t\\t\\t\\t\\t\\t\'urls\' => $modx->fromJSON($_POST[\'urls\'])\\n\\t\\t\\t\\t\\t);\\n\\t\\t\\t\\t}else{\\n\\t\\t\\t\\t\\t$newProperties = array(\\n\\t\\t\\t\\t\\t\\t\'index\' => (isset($_POST[\'index\']) ? $_POST[\'index\'] : $modx->getOption(\'stercseo.index\', null, \'1\')),\\n\\t\\t\\t\\t\\t\\t\'follow\' => (isset($_POST[\'follow\']) ? $_POST[\'follow\'] : $modx->getOption(\'stercseo.follow\', null, \'1\')),\\n\\t\\t\\t\\t\\t\\t\'sitemap\' => (isset($_POST[\'sitemap\']) ? $_POST[\'sitemap\'] : $modx->getOption(\'stercseo.sitemap\', null, \'1\')),\\n\\t\\t\\t\\t\\t\\t\'priority\' => (isset($_POST[\'priority\']) ? $_POST[\'priority\'] : $modx->getOption(\'stercseo.priority\', null, \'0.5\')),\\n\\t\\t\\t\\t\\t\\t\'changefreq\' => (isset($_POST[\'changefreq\']) ? $_POST[\'changefreq\'] : $modx->getOption(\'stercseo.changefreq\', null, \'weekly\')),\\n\\t\\t\\t\\t\\t\\t\'urls\' => $modx->fromJSON($_POST[\'urls\'])\\n\\t\\t\\t\\t\\t);\\n\\t\\t\\t\\t}\\n\\t\\t\\t}else{\\n\\t\\t\\t   \\tif($mode == \'upd\'){\\n\\t\\t\\t\\t\\t$newProperties = array(\\n\\t\\t\\t\\t\\t\\t\'index\' => (isset($_POST[\'index\']) ? $_POST[\'index\'] : $properties[\'index\']),\\n\\t\\t\\t\\t\\t\\t\'follow\' => (isset($_POST[\'follow\']) ? $_POST[\'follow\'] : $properties[\'follow\']),\\n\\t\\t\\t\\t\\t\\t\'sitemap\' => (isset($_POST[\'sitemap\']) ? $_POST[\'sitemap\'] : $properties[\'sitemap\']),\\n\\t\\t\\t\\t\\t\\t\'priority\' => (isset($_POST[\'priority\']) ? $_POST[\'priority\'] : $properties[\'priority\']),\\n\\t\\t\\t\\t\\t\\t\'changefreq\' => (isset($_POST[\'changefreq\']) ? $_POST[\'changefreq\'] : $properties[\'changefreq\']),\\n\\t\\t\\t\\t\\t\\t\'urls\' => $properties[\'urls\']\\n\\t\\t\\t\\t\\t);\\n\\t\\t\\t\\t}else{\\n\\t\\t\\t\\t\\t$newProperties = array(\\n\\t\\t\\t\\t\\t\\t\'index\' => (isset($_POST[\'index\']) ? $_POST[\'index\'] : $modx->getOption(\'stercseo.index\', null, \'1\')),\\n\\t\\t\\t\\t\\t\\t\'follow\' => (isset($_POST[\'follow\']) ? $_POST[\'follow\'] : $modx->getOption(\'stercseo.follow\', null, \'1\')),\\n\\t\\t\\t\\t\\t\\t\'sitemap\' => (isset($_POST[\'sitemap\']) ? $_POST[\'sitemap\'] : $modx->getOption(\'stercseo.sitemap\', null, \'1\')),\\n\\t\\t\\t\\t\\t\\t\'priority\' => (isset($_POST[\'priority\']) ? $_POST[\'priority\'] : $modx->getOption(\'stercseo.priority\', null, \'0.5\')),\\n\\t\\t\\t\\t\\t\\t\'changefreq\' => (isset($_POST[\'changefreq\']) ? $_POST[\'changefreq\'] : $modx->getOption(\'stercseo.changefreq\', null, \'weekly\')),\\n\\t\\t\\t\\t\\t\\t\'urls\' => $properties[\'urls\']\\n\\t\\t\\t\\t\\t);\\n\\t\\t\\t\\t}\\n\\t\\t\\t}\\n\\t\\t\\tif($oldResource->get(\'uri\') != $resource->get(\'uri\') && $oldResource->get(\'uri\') != \'\'){\\n\\/\\/$modx->log(modX::LOG_LEVEL_ERROR, \'OLD: \'.$oldResource->get(\'uri\').\' - NEW: \'. $resource->get(\'uri\'));\\n\\t\\t\\t\\t$newProperties[\'urls\'][] = array(\'url\' => $oldResource->get(\'uri\'));\\n\\t\\t\\t}\\n\\n        \\t$resource->setProperties($newProperties,\'stercseo\');\\n\\t\\tbreak;\\n\\tcase \'OnLoadWebDocument\':\\n\\t\\tif($modx->resource){\\n\\t\\t\\tif(!$stercseo->isAllowed($modx->resource->get(\'context_key\'))) return;\\n\\t\\t\\t$properties = $modx->resource->getProperties(\'stercseo\');\\n\\t\\t\\t$metaContent = array(\'noopd\', \'noydir\');\\n\\t\\t\\tif(!$properties[\'index\']) $metaContent[] = \'noindex\';\\n\\t\\t\\tif(!$properties[\'follow\']) $metaContent[] = \'nofollow\';\\n\\t\\t\\t$modx->setPlaceholder(\'seoTab.robotsTag\',implode(\',\', $metaContent));\\n\\t\\t}\\n\\t\\tbreak;\\n\\n\\tcase \'OnPageNotFound\':\\n\\t\\t$url = $_REQUEST[$modx->getOption(\'request_param_alias\', null, \'q\')];\\n\\t\\t$convertedUrl = str_replace(\'\\/\', \'_\\/\', ltrim($url, \'\\/\'));\\n\\t\\t$w = array(\\n\\t\\t\\t\'properties:LIKE\' => \'%\\"\'.$convertedUrl.\'\\"%\'\\n\\t\\t);\\n\\t\\tif($modx->getOption(\'stercseo.context-aware-alias\', null, \'0\')){\\n\\t\\t\\t$w[\'context_key\'] = $modx->context->key;\\n\\t\\t}\\n\\t\\t$alreadyExists = $modx->getObject(\'modResource\', $w);\\n\\t\\tif($alreadyExists){\\n\\t\\t\\t$id = $modx->makeUrl($alreadyExists->get(\'id\'));\\n\\t\\t\\t$modx->sendRedirect($id, 0, \'REDIRECT_HEADER\', \'HTTP\\/1.1 301 Moved Permanently\');\\n\\t\\t}\\n\\t\\tbreak;\\n\\tcase \'OnResourceBeforeSort\':\\n\\t\\tforeach($nodes as $node) {\\n\\t\\t\\t$oldResource = $modx->getObject(\'modResource\',$node[\'id\']);\\n\\t\\t\\t$resource \\t = $modx->getObject(\'modResource\',$node[\'id\']);\\n\\t\\t\\t$resource->set(\'parent\', $node[\'parent\']);\\n\\n\\t\\t\\tif(!$stercseo->isAllowed($resource->get(\'context_key\'))) return;\\n\\n\\t\\t\\tif($oldResource->get(\'uri\') != $resource->getAliasPath($resource->get(\'alias\')) && $oldResource->get(\'uri\') != \'\'){\\n\\t\\t\\t\\t$newProperties = $oldResource->getProperties(\'stercseo\');\\n\\t\\t\\t\\t$newProperties[\'urls\'][] = array(\'url\' => $oldResource->get(\'uri\'));\\n\\t\\t\\t\\t$oldResource->setProperties($newProperties,\'stercseo\');\\n\\t\\t\\t\\t$oldResource->save();\\n\\t\\t\\t}\\n\\t\\t}\\n\\t\\tbreak;\\n\\tcase \'OnResourceDuplicate\':\\n\\t\\tif(!$stercseo->isAllowed($newResource->get(\'context_key\'))) return;\\n\\t\\t$props = $newResource->getProperties(\'stercseo\');\\n\\t\\t$props[\'urls\'] = array();\\n\\t\\t$newResource->setProperties($props,\'stercseo\');\\n\\t\\t$newResource->save();\\n\\t\\tbreak;\\n\\n}\\nreturn;"}',
+);

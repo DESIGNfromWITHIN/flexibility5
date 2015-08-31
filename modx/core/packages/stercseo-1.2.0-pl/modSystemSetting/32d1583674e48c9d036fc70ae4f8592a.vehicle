@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'stercseo',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '28f2e3f86540604387a7a8e911ee98b2',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '32d1583674e48c9d036fc70ae4f8592a',
+  'native_key' => 'stercseo.priority',
+  'object' => '{"key":"stercseo.priority","value":"0.5","xtype":"textfield","namespace":"stercseo","area":"general","editedon":null}',
+);

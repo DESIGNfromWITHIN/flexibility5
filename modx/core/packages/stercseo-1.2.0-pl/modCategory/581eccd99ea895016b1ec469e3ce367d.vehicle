@@ -1,0 +1,43 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Snippets' => 
+    array (
+      '929a9a14eff4b3b723747fe052e2e6fe' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":1,"source":0,"property_preprocess":0,"name":"StercSeoSiteMap","description":"Outputs the sitemap based on the page settings made in SEO-tab","editor_type":0,"category":0,"cache_type":0,"snippet":"require_once $modx->getOption(\'stercseo.core_path\',null,$modx->getOption(\'core_path\').\'components\\/stercseo\\/\').\'model\\/stercseo\\/stercseo.class.php\';\\n$stercseo = new StercSeo($modx,$scriptProperties);\\n$allowSymlinks = (isset($allowSymlinks)) ? $allowSymlinks : 0;\\n$contexts = (isset($contexts)) ? explode(\',\',str_replace(\' \',\'\',$contexts)) : array($modx->resource->get(\'context_key\'));\\nreturn $stercseo->sitemap($contexts, \'sitemap\\/rowTpl\', \'sitemap\\/outerTpl\', $allowSymlinks);","locked":0,"properties":null,"moduleguid":"","static":0,"static_file":"","content":"require_once $modx->getOption(\'stercseo.core_path\',null,$modx->getOption(\'core_path\').\'components\\/stercseo\\/\').\'model\\/stercseo\\/stercseo.class.php\';\\n$stercseo = new StercSeo($modx,$scriptProperties);\\n$allowSymlinks = (isset($allowSymlinks)) ? $allowSymlinks : 0;\\n$contexts = (isset($contexts)) ? explode(\',\',str_replace(\' \',\'\',$contexts)) : array($modx->resource->get(\'context_key\'));\\nreturn $stercseo->sitemap($contexts, \'sitemap\\/rowTpl\', \'sitemap\\/outerTpl\', $allowSymlinks);"}',
+        'guid' => '0f8ccb971299136beb34564d43022de5',
+        'native_key' => 1,
+        'signature' => '414dfb4914600c82ef486377f768bf64',
+      ),
+    ),
+  ),
+  'abort_install_on_vehicle_fail' => true,
+  'related_object_attributes' => 
+  array (
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'stercseo',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'a627b2add8fa387e964984bb0258cae1',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '581eccd99ea895016b1ec469e3ce367d',
+  'native_key' => 1,
+  'object' => '{"id":1,"parent":0,"category":"StercSEO","rank":0}',
+);
